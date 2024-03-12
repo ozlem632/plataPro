@@ -8,6 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Honk:SHLN@100&family=Whisper&display=swap" rel="stylesheet">
+<style>
+  /* Resmin üstüne gelecek transparan katmanın stilini belirleyelim */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 213, 213, 0.5); /* Siyah renk ve %50 opaklıkta bir arka plan oluşturur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 75px;
+position: fixed;
+    
+  }
+
+  /* Metnin stili */
+  .text {
+    color: purple ;
+    font-size: 24px;
+    text-align: center;
+    display: fixed;
+  }
+
+  /* Resim container'ının pozisyonunu belirleyelim */
+  .container {
+    position: relative;
+    width: 100%;
+     /* Örneğin 600 piksel genişlikte bir container belirleyelim */
+  }
+  .fixed-div {
+    position: fixed; /* Div'in sabit konumda olmasını sağlar */
+    top: 50px; /* Sayfanın üstünden 50 piksel uzaklıkta olacak şekilde ayarladık, isteğe göre değiştirilebilir */
+    left: 50px; /* Sayfanın solundan 50 piksel uzaklıkta olacak şekilde ayarladık, isteğe göre değiştirilebilir */
+    background-color: lightblue; /* Arka plan rengi */
+    padding: 20px; /* İçeriğin etrafında boşluk bırakır */
+    border: 1px solid black; /* Kenarlık oluşturur */
+    width: 200px; /* Genişlik */
+  }
+
+</style>
+
 </head>
 <body>
   
@@ -35,11 +79,12 @@
   </div>
   
 </div>
-<div class="col-lg-2 col-md-3 col-sm-2 col-xs-12 div2">
-  
-  <div class="c"><h3>comprar</h3></div>
-  <div><h3 class="c">iniciar</h3></div>
-  <div><h3 class="c" >registrar</h3></div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 div2">
+  <div class="c"><img src="IMG/heart.png" width="50px"></div>
+  <div class="c"><h3>COMPRAR</h3></div>
+  <div class="c"><img src="IMG/shopping-cart.png" width="50px"></div>
+  <div><h3 class="c">INICIAR</h3></div>
+  <div><h3 class="c" >REGISTRAR</h3></div>
 
   
 
@@ -50,19 +95,41 @@
 </div>
 </div>  
 <div>
-  <img src="IMG/ring-2363688_1280.jpg" width="100%;"></div>
-<div style="background-color: black;width: 100%;height:300px;">
-
-
-
-  <div class="col-lg-1 col-md-3 col-sm-2 col-xs-12 div3">
-    <div> <img src="IMG/whatsapp.png"width="50px" ></div>
-    <div> <img src="IMG/etsy.png"width="50px" ></div>
-    <div> <img src="IMG/return.png"width="50px" ></div>
-  
+<div>
  
+  <img src="IMG/ring-2363688_1280.jpg" width="100%;"></div>
+</div>
+
+
+
+  <div style="background-color: black;width: 100%;height:300px;">
+
+
+
+  <div style="display: flex;justify-content: flex-end;">
+    
+    <div class="c"> <img src="IMG/whatsapp.png"width="50px" ></div>
+    <div class="c"> <img src="IMG/etsy.png"width="50px" ></div>
+    <div class="c"> <img src="IMG/return.png"width="50px" ></div>
+    <div class="c"> <img src="IMG/facebook.png"width="50px" ></div>
+    <div class="c" > <img src="IMG/gmail.png"width="50px" ></div>
 </div></div>
+</div>
+<!-- Resim container'ı -->
+<div class="container">
+  <!-- Transparan katman -->
+  <div class="overlay">
+    <!-- Metin -->
+    <div class="text"><b>BIENVENIDOS AL MI WEB SITIO</b></div>
+  </div>
+  <!-- Resim -->
+
+  
+  
+  
+  <div style="height: 2000px;"></div>
 
 
+</div>
 </body>
 </html>
