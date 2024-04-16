@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+
+
 </head>
 <body>
     <h1>PENDIENTES</h1>
+<div class="col-md-4 display">
+   <div style="display: block;justify-content: space-between;border: solid 3px black;">
+    <div><img src="IMG/yesilkupe.webp"  alt="yesil"></div>
+<div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat recusandae debitis, similique aliquid ipsam blanditiis temporibus quam tenetur ea molestiae ducimus inventore maiores, maxime dolore earum perferendis, distinctio quos!</p></div>
+<div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat recusandae debitis, similique aliquid ipsam blanditiis temporibus quam tenetur ea molestiae ducimus inventore maiores, maxime dolore earum perferendis, distinctio quos!<button id="bt" onclick="oku()">oku</button></p></div>
+<div>
+  </div>
+
+<div id="devam"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat recusandae debitis, similique aliquid ipsam blanditiis temporibus quam tenetur ea molestiae ducimus inventore maiores, maxime dolore earum perferendis, distinctio quos!<button id="bt" onclick="oku()">oku</button></p>
+</div>
+</div>
+
+
+
+    <div class="border"><img src="IMG/kuperenklki.avif" width="300px" alt="yesil"></div>
+    <div class="border"><img src="IMG/kuperenklki.avif" width="300px" alt="yesil"></div>
+    <div class="border"><img src="IMG/yesilkupe.webp" width="300px" alt="yesil"></div>
+
+</div>
+</div>
+<script>
+    function oku() {
+       var element = document.getElementById("devam");
+  
+       var element1 = document.getElementById("bt");     
+       if (element.style.display === "none") {
+    element.style.display = "block";
+element1.style.display="none";
+  } else {
+    element.style.display = "none";
+    element1.style.display="block";
+  }
+}
+    
+ </script>
+
 </body>
 </html>

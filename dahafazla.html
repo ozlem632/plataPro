@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Bu bir metindir. Kısa bir giriş metni.</p>
+
+<!-- Daha fazla oku butonu -->
+<button onclick="toggleVisibility()">Daha Fazla Oku</button>
+
+<!-- Gizli olan metin -->
+<p id="dahaFazlaMetin">Bu daha fazla metni içerir. Daha fazla detay için burayı okuyabilirsiniz.</p>
+
+<script>
+function toggleVisibility() {
+  var dahaFazlaMetin = document.getElementById("dahaFazlaMetin");
+  if (dahaFazlaMetin.style.display === "none") {
+    dahaFazlaMetin.style.display = "block";
+  } else {
+    dahaFazlaMetin.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

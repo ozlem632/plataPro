@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Müşteri Hizmetleri</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    #whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+    
+</style>
+
+</head>
+<body>
+    <button id="whatsapp-btn">WhatsApp Atencion Cliente</button>
+
+    <script src="script.js"></script>
+<script>
+    document.getElementById("whatsapp-btn").addEventListener("click", function() {
+    var phoneNumber = "662601481"; // WhatsApp numarası
+    var message = "Merhaba, size nasıl yardımcı olabiliriz?"; // Varsayılan ileti
+
+    // WhatsApp URL oluşturma
+     var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message); 
+
+   
+    // WhatsApp sayfasını yeni sekmede aç
+    window.open(whatsappURL, "_blank");
+});
+
+
+
+</script>
+
+</body>
+</html>
