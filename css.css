@@ -9,7 +9,7 @@
 	h2{font-size: 15px; color:yellow;margin-bottom: 20px;}
 	.div1{display:flex;justify-content: space-between;background-color:black;} 		
     .div2{display: flex;justify-content: space-between;margin-top: 30px;}
-.c{display: flex;justify-content: space-between;margin-left: 15px;}
+.c{display: flex;justify-content: space-between;margin-left: 15px;cursor: pointer;}
 /* .c:hover{padding: 20px;background-color: rgb(248, 35, 134);} */
 
 ul {
@@ -139,7 +139,70 @@ position: fixed;
 		width: 100%;
 	}
 }
+/* registrar */
 
+   /* Estilos para la ventana modal */
+   .modal {
+	display: none; 
+	position: fixed; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7); 
+	z-index: 1000; 
+}
+
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 20px; /* Bordes redondeados */
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	width: 90%; /* Ancho del 90% */
+	max-width: 500px; /* Ancho máximo */
+}
+
+.close-btn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	cursor: pointer;
+	font-size: 24px;
+}
+h4{font-size: 20px;text-align: center;margin-bottom: 10px;}
+/* Estilo para el botón */
+#openModalBtn {
+	padding: 10px 20px;
+	background-color: #007BFF;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* Estilo para el botón de registro */
+#registerForm button {
+	padding:1px;
+	background-color: red; /* Cambio de color a rojo */
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	;
+}
+
+/* Estilo para los campos del formulario */
+.form-input {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
 /* anillos */
 h1,h2,h3 {
     text-align: center;
@@ -197,7 +260,7 @@ h1,h2,h3 {
     text-align: center;
     font-size: 20px;
 }
-
+button{width: 150px}
 
 @media(min-width:1200px){
 

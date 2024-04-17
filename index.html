@@ -13,7 +13,7 @@
 <body>
   
   
-  <div style="background-color: black;">
+  <div style="background-color: black;width: 100%;">
   <div class="col-lg-11 col-md-9 col-sm-10 col-xs-12 div1">
     <div class="divchild">
     <div><img src="IMG/tulips.png" width="50px"  class="img"></div>
@@ -22,15 +22,13 @@
     <div style="margin-top: 10px;"><img src="IMG/icons8-hamburger-100.png" width="40px"></div>
     
       <ul>
-       
-        
-     <li><h2><a href="catalog.html"></a>CATALOG</h2>
-      <div>
+        <li><h2><a href="catalog.html"></a>CATALOG</h2>
+      
       <ul>
-      <li><a href="anillos.html">ANILLOS</a></li>
-      <li><a href="pulseras.html">PULSERAS</a></li>
-      <li><a href="pendientes.html">COLLARES</a></li>
-      <li><a href="pendientes.html">PENDIENTES</a></li>
+      <li><a href="anillornek.html">ANILLOS</a></li>
+      <li><a href="pulserasornek.html">PULSERAS</a></li>
+      <li><a href="coo">COLLARES</a></li>
+      <li><a href="ornekpendientes.html">PENDIENTES</a></li>
      </ul>
    
      
@@ -45,31 +43,118 @@
  <div class="c"><h3>COMPRAR</h3></div>
   <div class="c"><img src="IMG/heart.png" width="40px"></div>
   <div class="c"><img src="IMG/shopping-cart.png" width="40px"></div>
-  <div class="c"><h3>INICIAR</h3></div>
-  <div class="c"><h3>REGISTRAR</h3></div>
+  <div class="c" id="iniciar"><h3>INICIAR</h3></div>
+  <div class="c" id="registrar"><h3>REGISTRAR</h3></div>
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h4>Registro</h4>
+        <form id="registerForm">
+            <input type="text" class="form-input" placeholder="Nombre de usuario" required>
+            <input type="email" class="form-input" placeholder="Correo electrónico" required>
+            <input type="password" class="form-input" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        
+      </div>
+</div>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+      <span class="close-btn" id="closeLoginModal">&times;</span>
+      <h4>Iniciar Sesión</h4>
+      <form id="loginForm">
+          <input type="email" class="form-input" placeholder="Correo electrónico" required>
+          <input type="password" class="form-input" placeholder="Contraseña" required>
+          <button type="submit">Iniciar Sesión</button>
+      </form>
+  </div>
+</div>
 </div>
 </div>  
+<script>
+  // JavaScript para controlar la ventana modal
+  const openModalBtn = document.getElementById('registrar');
+  const closeModal = document.getElementById('closeModal');
+  const registerModal = document.getElementById('registerModal');
+
+  openModalBtn.addEventListener('click', () => {
+      registerModal.style.display = 'block';
+      
+  });
+
+  closeModal.addEventListener('click', () => {
+      registerModal.style.display = 'none';
+  });
+
+  // Cierra la ventana modal si el usuario hace clic fuera de ella
+  window.addEventListener('click', (event) => {
+      if (event.target === registerModal) {
+          registerModal.style.display = 'none';
+          
+      }
+  });
+
+  // Evitar que el formulario se envíe
+  const registerForma = document.getElementById('registerForm');
+  registerForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      // Aquí puedes agregar la lógica para registrar al usuario
+      alert('Usuario registrado correctamente');
+      registerModal.style.display = 'none';
+  });
+</script>
+<script>
+    // JavaScript para controlar la ventana modal de inicio de sesión
+    const openLoginModal = document.getElementById('iniciar');
+    const closeLoginModal = document.getElementById('closeLoginModal');
+    const loginModal = document.getElementById('loginModal');
+
+    openLoginModal.addEventListener('click', () => {
+        loginModal.style.display = 'block';
+    });
+
+    closeLoginModal.addEventListener('click', () => {
+        loginModal.style.display = 'none';
+    });
+
+    // Cierra la ventana modal si el usuario hace clic fuera de ella
+    window.addEventListener('click', (event) => {
+        if (event.target === loginModal) {
+            loginModal.style.display = 'none';
+        }
+    });
+
+    // Evitar que el formulario se envíe
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Usuario inició sesión correctamente');
+        loginModal.style.display = 'none';
+    });
+</script>
+
+    
+
+<img src="IMG/ring-2363688_1280.jpg" width="100%" >
+
+ 
 
 
- <img src="IMG/ring-2472390_1280.jpg" width="100%;"></div>
-</div>
+  <div style="background-color: black;width: 100%;height: 250px;">
 
 
 
-  <div style="background-color: black;width: 100%;height:300px;">
-
-
-
-  <div style="display: flex;justify-content: center;">
+  <div style="display: flex;justify-content: center; margin: ;">
     
    
     <div class="c"> <a href="https://www.instagram.com/platapro2024/?igsh=cGNkbGF1ZnJ3MXYx"><img src="IMG/instagram.png"width="50px" ></a></div>
     <div class="c"> <img src="IMG/etsy.png"width="50px" ></div>
     <div class="c"> <img src="IMG/facebook.png"width="50px" ></div>
     <div class="c" > <img src="IMG/gmail.png"width="50px" ></div>
-  </div>
+ 
+</div>
      <div style="font-size: 10px; color: white;text-align: center;margin: 40px;"><p> &copy; 2024 Sitenizin Adı. Tüm Hakları Saklıdır.</p></div>
-  
+    
   </div>
   </div>
 
