@@ -8,14 +8,14 @@
 	box-sizing: border-box; }
 	h2{font-size: 15px; color:yellow;margin-bottom: 20px;}
 	.div1{display:flex;justify-content: space-between;background-color:black;} 		
-    .div2{display: flex;justify-content: space-between;margin-top: 30px;}
+    .div2{display: flex;justify-content: space-between;margin-top: 30px;margin-right: 15px;}
 .c{display: flex;justify-content: space-between;margin-left: 15px;cursor: pointer;}
 /* .c:hover{padding: 20px;background-color: rgb(248, 35, 134);} */
 
-ul {
+      ul {
 		list-style: none;
 		padding: 0;
-	}ul li {
+	  }ul li {
 		
 		display: block;
 		justify-content: center;
@@ -55,7 +55,33 @@ ul {
 		
 		text-align: center;
 		}
-		
+		/* buttonanillos */
+		/* Ver Detalle ve Comprar butonları için genel stil */
+button[data-action="detail"],
+button[data-action="buy"] {
+    padding: 20px 20px;  /* Buton boyutu */
+    margin: 5px;         /* Butonlar arası boşluk */
+    border: none;        /* Kenarlık yok */
+    cursor: pointer; 
+	   /* Mouse üzerine gelindiğinde el işareti */
+}
+
+/* Ver Detalle butonunun stilini ayarlama */
+button[data-action="detail"] {
+    background-color: #007bff;  /* Mavi arka plan rengi */
+    color: white; 
+	
+	          /* Beyaz yazı rengi */
+}
+
+/* Comprar butonunun stilini ayarlama */
+button[data-action="buy"] {
+    background-color: #28a745;  /* Yeşil arka plan rengi */
+    color: white;
+	padding: 20px; 
+	font-size: 20px;
+	text-align: center;               /* Beyaz yazı rengi */
+}
 h1 {
     font-family: "Whisper", cursive;
     font-weight: 400;
@@ -139,6 +165,10 @@ position: fixed;
 		width: 100%;
 	}
 }
+@media screen and (max-width: 1000px) {
+	#responsive{display: block;}
+	}
+
 /* registrar */
 
    /* Estilos para la ventana modal */
@@ -194,6 +224,10 @@ h4{font-size: 20px;text-align: center;margin-bottom: 10px;}
 	cursor: pointer;
 	;
 }
+
+
+
+
 
 /* Estilo para los campos del formulario */
 .form-input {
@@ -277,7 +311,7 @@ button{width: 150px}
 	.col-lg-2{width: 16.66666667%;}
 	.col-lg-1{width: 8.33333333%;}
 	.col-lg-0{display:none;}
-	
+
 	
 
 	
@@ -305,7 +339,7 @@ ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal
 
 
 }
-
+/* indek html */
 /*=============================================
 PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical
 768px=============================================*/
@@ -328,6 +362,8 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical
 		
 		flex-direction: row;
 		  flex-basis: 100%;}
+		  input{width: 100%;}
+		  
 	
 }
 /*=============================================PANTALLA DE PHONES -
@@ -356,5 +392,8 @@ EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical
 		flex-direction: column;
 		  flex-basis: 100%;}
 		  .flexcontainer div{flex-basis: 100%;}
+		  input{width: 95%}
+
+		
 		}
 
