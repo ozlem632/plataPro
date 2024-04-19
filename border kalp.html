@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart with Text</title>
+    <style>
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            margin: 50px;
+        }
+
+        .heart::before,
+        .heart::after {
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .heart::before {
+            top: -50px;
+            content: "Yagiz";
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            text-align: center;
+            line-height: 100px; /* Kalbin yüksekliği kadar */
+            width: 100px;
+            height: 100px;
+            z-index: 1; /* Yazının kalbin üzerinde olmasını sağlar */
+        }
+
+        .heart::after {
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>
+

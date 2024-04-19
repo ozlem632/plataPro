@@ -11,21 +11,28 @@
 
 </head>
 <body>
-  
-  
-  <div style="background-color: black;width: 100%;">
-  
-    <div class=" div1">
+   <div class=" div1">
     <div class="divchild">
     <div><img src="IMG/tulips.png" width="50px"  class="img"></div>
     <div><h1>Platapro</h1></div>
-    <div  style="display: flex; margin-left: 30px;margin-top: 15px;">
-    <div style="margin-top: 10px;"><img src="IMG/icons8-hamburger-100.png" width="40px"></div>
     
-      <ul>
-        <li><h2><a href="catalog.html"></a>CATALOG</h2>
+    <div class="catagoria">
+    <div style="margin-top: 10px;margin-right: 0px;"><img src="IMG/icons8-hamburger-100.png" width="40px"></div>
+    
+     <!--  <ul> -->
+        <!-- <li> --> <!-- <div> <h2>CATALOG</h2></div>  -->
+             <div class="menu">
+        <div class="menu-trigger" id="hamburger"><h2>CATALOG</h2></div>
+        <div class="submenu" id="submenu">
+            <a href="anillornek.html">ANILLOS</a>
+            <a href="pulserasornek.html">PULSERAS</a>
+            <a href="collaresornek.html">COLLARES</a>
+            <a href="ornekpendientes.html">PENDIENTES</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
       
-      <ul>
+<!--       <ul>
       <li><a href="anillornek.html">ANILLOS</a></li>
       <li><a href="pulserasornek.html">PULSERAS</a></li>
       <li><a href="collaresornek.html">COLLARES</a></li>
@@ -34,6 +41,8 @@
     </li>
     </ul> </div>
 
+</div> -->
+</div>
 </div>
 <div style="display: flex;">
   <div style="margin-top: 12px;">
@@ -47,7 +56,7 @@
 
   
  <div class="c"><h3>COMPRAR</h3></div>
-  <div class="c"><img src="IMG/heart.png" width="40px"></div>
+  <div class="c"><img src="IMG/heart.png" width="40px" id="cesta"></div>
   <div class="c"><img src="IMG/shopping-cart.png" width="40px"></div>
   <div class="c" id="iniciar"><h3>INICIAR</h3></div>
   <div class="c" id="registrar"><h3>REGISTRAR</h3></div>
