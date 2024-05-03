@@ -7,12 +7,12 @@
 	font-family: sans-serif;
 	box-sizing: border-box; }
 	h2{font-size: 15px; color:yellow;margin-top: 15px;}
-	.div1{display:flex;justify-content: space-between;background-color:rgb(53, 87, 179);} 		
+	.div1{display:flex;justify-content: space-between;background-color:rgb(214, 207, 221);} 		
     .div2{display: flex;justify-content: space-between;margin-top: 30px;margin-right: 15px;}
 .c{display: flex;justify-content: space-between;margin-left: 15px;cursor: pointer;}
 /* .c:hover{padding: 20px;background-color: rgb(248, 35, 134);} */
 tr td img{width: 50%;}
- 
+
       ul {
 		list-style: none;
 		padding: 0;
@@ -47,7 +47,7 @@ tr td img{width: 50%;}
 	}
 	.whatsup{display: block; position: fixed;}
 	
-	H3{font-size: 15px;color: yellow; font-family: Arial, Helvetica, sans-serif;font-style: italic;margin: auto;}
+	H3{font-size: 15px;color: yellow; font-family: Arial, Helvetica, sans-serif;font-style: italic;margin-top: 10px;}
 	 ul li:hover ul {
 		display: block;
 		background-color:rgb(226, 216, 216);
@@ -162,7 +162,7 @@ button{width: 100px; height: 25px; background-color: aqua;font-size: 20px; text-
 
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: Ariafl, sans-serif;
 }
 
 .responsive-table {
@@ -306,6 +306,7 @@ h4{font-size: 20px;text-align: center;margin-bottom: 10px;}
 	border-radius: 15px;
 	border: solid 4px rgb(211, 233, 12);
 }
+ul{display: flex;}
 
 .submenu a {
     display: block;
@@ -317,8 +318,10 @@ h4{font-size: 20px;text-align: center;margin-bottom: 10px;}
 .submenu a:hover {
     background-color: #acd612;
 }
-
-
+@media screen (max-width: 576px){
+	
+html{font-size: 50%;}
+}
 
 
 
@@ -383,7 +386,46 @@ h1,h2,h3 {
 .circuloOculto {
     visibility:hidden;
 }
-#fotoTitulo{
+.bayrak {
+    border-radius: 50%; /* Yuvarlak köşeler için */
+    width: 30px; /* Ölçüleri istediğiniz gibi ayarlayabilirsiniz */
+    height: 30px;
+	margin-top: 2px;
+     /* Resmin yuvarlak alan içine sığmasını sağlar */
+
+}
+
+
+/* index sayfasinin resmi */
+.image2 {
+    position:relative;
+    background: url('IMG/ring-2363688_1280.jpg') no-repeat fixed;
+    background-position: center center;
+    background-size: cover;
+    min-height: 800px; 
+}
+.content { /* section */
+    width: 100%;
+	background-color:rgba(255,255,255,1.00);}
+.bien{
+    color:rgb(46, 46, 235);
+    font-size: 55px;
+    text-align:center;
+    margin: 0 auto;
+    width: 600px;
+    position: absolute; /* hijo */
+    top: 60%;
+    left: 50%;
+    margin-left: -300px;
+    opacity:0.8;
+}
+.footer{display: flex;justify-content: center; 
+
+}
+.imagenpagina h3{font-size: 40px;position: relative; margin-top: 150px;}
+.imagenpagina{display: flex; justify-content: space-evenly;flex-wrap: wrap;}
+.imagenpagina img{border-radius: 50%;border:solid 5px #007BFF;width: 300px;height: 300px;top: 100px;flex-wrap: wrap;}
+	#fotoTitulo{
     text-align: center;
     font-size: 20px;
 }
@@ -431,8 +473,9 @@ ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal
 	.col-md-1{width: 8.33333333%;}
 	.col-md-0{display:none;}
 	
-	 
 
+	 input{width: 50%}
+	 
 
 
 }
@@ -456,8 +499,8 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical
 	.col-sm-0{display:none;}
 	.display{display: inline-flex;}
 	.divchild{width: 33.33;}
-	 input{width: 33.33;}
-	 .div2{width: 33.33;}
+	input{width: 40%}
+		  .catagoria{width: 10%;}
 		  
 		  
 	
@@ -484,19 +527,32 @@ EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical
 		.div2{background-color:rgb(236, 28, 201);}
 	.display{display: block;}
 	.flexcontainer {
-		
 		flex-direction: column;
 		  flex-basis: 100%;}
 		  .flexcontainer div{flex-basis: 100%;}
 		  input{width: 95%}
 		  .divchild{display: block;}.divchild img{margin-left: 220px;margin-top: 20px;}
-        .catagoria{display: flex; flex-direction: column;margin: auto;}
+        .catagoria{ display: flex; flex-direction: column;margin: auto;}
 		.catagoria h2{margin-top: 0;}
-		.div2{width: 100%;}
+		.div2{width: 100%;display: flex; justify-content: center;}
 		.menu {margin: 0 auto;
-			
 			display: inline-block;
 		}
+		
+		.bien{
+			color:rgb(153, 149, 149);
+			font-size: 30px;
+			text-align:center;
+			margin: 0 auto;
+			width: 600px;
+			position: absolute; /* hijo */
+			top: 10%;
+			left: 50%;
+			margin-left: -300px;
+			opacity:0.8;
+		}
+	
+	
 	
 	}
 

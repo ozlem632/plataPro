@@ -131,18 +131,28 @@ document.addEventListener('DOMContentLoaded', () => {
     table.addEventListener('click', (event) => {
         if (event.target.tagName === 'BUTTON' && event.target.getAttribute('data-action') === 'buy') {
             // Comprar (Añadir) butonuna tıklandığında yapılacak işlemler
+            event.preventDefault();
+          
             const productId = event.target.getAttribute('data-id');
             const product = cartItems.find(item => item.urun_id === productId);
             if (!product) {
                 const selectedProduct = cartItems.find(item => item.urun_id === productId);
                 if (selectedProduct) {
                     cartItems.push(selectedProduct);
+                   
+                    
                 }
+                
+            
             }
         }
+   
+        
+    
     });
 
     // Sepet içeriğini gösterme
+   
     cartButton.addEventListener('click', () => {
         modal.style.display = 'block';
         renderCartItems();
@@ -169,12 +179,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // Ürün bilgilerini oluşturma
             const textElement = document.createElement('div');
             textElement.textContent = `Ürün ID: ${item.urun_id}, Marka: ${item.marka}, Fiyat: ${item.fiyat}`;
-            
+    
             // Elementleri ana div'e ekleme
             itemElement.appendChild(imgElement);
             itemElement.appendChild(textElement);
             
             cartContent.appendChild(itemElement);
+            
         });
     }
+
+
 });
