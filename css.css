@@ -6,24 +6,70 @@
 	text-decoration: none;
 	font-family: sans-serif;
 	box-sizing: border-box; }
-	h2{font-size: 15px; color:yellow;margin-top: 15px;}
-	.div1{display:flex;justify-content: space-between;background-color:rgb(53, 87, 179);} 		
+	h2{font-size: 15px; color:rgb(68, 0, 255);margin-top: 15px;}
+	.div1{display:flex;justify-content: space-between;} 		
     .div2{display: flex;justify-content: space-between;margin-top: 30px;margin-right: 15px;}
-.c{display: flex;justify-content: space-between;margin-left: 15px;cursor: pointer;}
+/* anillo.html */
+     dialog{width:30%;height:50%;border-radius: 20px;border: solid 3px red;margin: 0 auto;margin-top: 300px;}
+    dialog button{justify-content: center;}
+    #articulos {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 20px;
+         width: auto;
+         
+     }
+    #articulos img{border: solid 1px white;
+ display: flex;justify-content: center;width: 200px;}
+    
+     .ficha {
+         border: 1px solid #319624;
+         padding: 10px;
+         width: 250px;
+         height: 400px;
+         position: relative;
+         
+         
+     }
+    .ficha p{font-size: 20px;color: rgb(13, 0, 255); text-align: center;}
+     #imagenMarco {
+         width: 200px;
+         height:200px ;
+        
+     }
+     .ficha button{
+         display: flex;
+         position:absolute;
+         bottom: 15px;
+         border-radius: 15px; border: solid 3px purple; background-color:purple; font-size: 15px; color: aliceblue;width: 45%; height: 65px; padding: 10px;}
+     #anadir{position: absolute; right: 10px; background-color: #51c741;border: solid 3px  #51c741;}
+     #imagenMarco img  {
+           width: 100%; 
+           height: 100%;
+         object-fit: contain;
+     }
+
+
+	/* .c{display: flex;justify-content: space-between;margin-left: 15px;cursor: pointer;font-weight: bold;} */
 /* .c:hover{padding: 20px;background-color: rgb(248, 35, 134);} */
 tr td img{width: 50%;}
- 
+.navbar{display: flex; justify-content: space-between; background-color: #140909;}
       ul {
+		display: flex;
+		
 		list-style: none;
-		padding: 0;
-	  }ul li {
+		padding: 0;cursor: pointer;font-weight: bold;
+
+	 
+	}ul li {
 		
 		display: block;
 		justify-content: center;
 		position: relative;
+		margin-left: 5px;
 		
 	}
-	li{list-style-image: url(img/1637359590869.jpg);}
+	li{list-style-image: url(img/16373595908);}
 	 
 	ul li a {
 		display: block;
@@ -33,8 +79,11 @@ tr td img{width: 50%;}
 		
 		
 	}
-	.catagoria{display: flex; margin-left: 30px;margin-top: 15px;}
-	h1{font-size: 100px;color: rgb(255, 0, 76);}
+	.catagoria{display: flex;margin-top: 15px ;}
+	.catagoria img{width: 50px; height: 50px;}
+	.catagoria h4{ margin-top: 15px; color: #1fdf2f; font-size: 20px;}
+	
+
 	
 	 ul li ul {
 		display: none;
@@ -47,7 +96,7 @@ tr td img{width: 50%;}
 	}
 	.whatsup{display: block; position: fixed;}
 	
-	H3{font-size: 15px;color: yellow; font-family: Arial, Helvetica, sans-serif;font-style: italic;margin: auto;}
+	H3{font-size: 15px;color: rgb(17, 228, 27); font-family: Arial, Helvetica, sans-serif;font-style: italic;margin-top: 10px;}
 	 ul li:hover ul {
 		display: block;
 		background-color:rgb(226, 216, 216);
@@ -139,15 +188,16 @@ button[data-action="buy"] {
 	text-align: center;               /* Beyaz yazı rengi */
 }
 
-
+h5{font-size: 40px;color: blue;}
 
 h1 {
     font-family: "Whisper", cursive;
     font-weight: 400;
     font-style: normal;
-	color: rgb(15, 167, 40);
+	color: rgb(58, 245, 34);
 	font-size: 50px;
 	text-align: center;
+	font-weight: bolder;
 	
   }
   .div3{display: flex;; background-color: black;width: 100%;}
@@ -158,11 +208,11 @@ img{background-size: contain;}
  .display{display: flex;justify-content: space-between;gap: 4px; width:100%;}
 .border{border: solid 2px black;margin-left: 3px;}
 #devam{display: none;}
-button{width: 100px; height: 25px; background-color: aqua;font-size: 20px; text-align: center;}
+ dialog button{position: absolute; width: 100px; height: 50px; background-color: rgb(255, 0, 255);font-size: 20px;color: white; text-align: center;}
 
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: Ariafl, sans-serif;
 }
 
 .responsive-table {
@@ -215,7 +265,8 @@ position: fixed;
      /* Örneğin 600 piksel genişlikte bir container belirleyelim */
   margin-top: 100px;
 	}
-
+.search{display: flex;}
+.search img{margin-top: 8px;width: 65; height: 65px;}
   .display{display: flex;justify-content: space-between;}
 @media screen and (max-width: 600px) {
 	.responsive-table th, 
@@ -260,7 +311,7 @@ position: fixed;
 	cursor: pointer;
 	font-size: 24px;
 }
-h4{font-size: 20px;text-align: center;margin-bottom: 10px;}
+
 /* Estilo para el botón */
 #openModalBtn {
 	padding: 10px 20px;
@@ -282,14 +333,16 @@ h4{font-size: 20px;text-align: center;margin-bottom: 10px;}
 	;
 }
 /* catalog menusu */
-.menu {
+.menu { 
     position: relative;
     display: inline-block;
 }
 
 .menu-trigger {
     cursor: pointer;
-    padding: 10px;
+	margin-top: ;
+	
+
     
 }
 
@@ -306,6 +359,7 @@ h4{font-size: 20px;text-align: center;margin-bottom: 10px;}
 	border-radius: 15px;
 	border: solid 4px rgb(211, 233, 12);
 }
+ul{display: flex;}
 
 .submenu a {
     display: block;
@@ -317,8 +371,10 @@ h4{font-size: 20px;text-align: center;margin-bottom: 10px;}
 .submenu a:hover {
     background-color: #acd612;
 }
-
-
+@media screen (max-width: 576px){
+	
+html{font-size: 50%;}
+}
 
 
 
@@ -379,11 +435,63 @@ h1,h2,h3 {
   
 
 }
+.padrecatagoria{display: flex;
+    }
+
 .divtexto{display: flex;flex-direction: column;}
 .circuloOculto {
     visibility:hidden;
 }
-#fotoTitulo{
+.bayrak {
+    border-radius: 50%; /* Yuvarlak köşeler için */
+    width: 40px; /* Ölçüleri istediğiniz gibi ayarlayabilirsiniz */
+    height: 40px;
+	margin-top: 2px;
+	background-size: contain;
+
+     /* Resmin yuvarlak alan içine sığmasını sağlar */
+
+}
+
+
+/* index sayfasinin resmi */
+.image2 {
+    position:relative;
+    background: url('IMG/fonrenkli.jpeg') no-repeat fixed;
+    background-position: center center;
+    background-size: cover;
+	
+}
+
+.content { /* section */
+    width: 100%;
+	background-color:rgba(255,255,255,1.00);}
+.bien{
+   position: absolute;
+   color:rgb(13, 4, 22);
+    font-size: 55px;
+    text-align:center;
+    margin: 0 auto;
+    width: 600px;
+    position: absolute; /* hijo */
+    top: 20px;
+    left: 50%;
+    margin-left: -300px;
+    opacity:0.8;
+  }
+  
+/* h4{font-family: 'Honk', system-ui;
+	font-size: 40px;
+	 text-align: center;
+	}
+ */
+.padrefooter { background-color: black;width: 100%;height: 500px;}
+.footer{display: flex;flex-direction:column;justify-content: center;  cursor: pointer;font-weight: bold;text-align: center;margin-top: 300px;}
+
+.imagenpagina h3{font-size: 40px;position: relative; margin-top: 200px;margin-left: 115px;margin-bottom: 15px;}
+.imagenpagina{display: flex;justify-content: ; flex-wrap: wrap;;}
+.imagenpagina img{border-radius: 50%;border:solid 5px #007BFF;width: 300px;height: 300px;flex-wrap: wrap;margin-left: 100px;margin-bottom: 20px;}
+	#fotoTitulo{
     text-align: center;
     font-size: 20px;
 }
@@ -431,8 +539,9 @@ ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal
 	.col-md-1{width: 8.33333333%;}
 	.col-md-0{display:none;}
 	
-	 
 
+	 input{width: 50%}
+	 
 
 
 }
@@ -456,8 +565,8 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical
 	.col-sm-0{display:none;}
 	.display{display: inline-flex;}
 	.divchild{width: 33.33;}
-	 input{width: 33.33;}
-	 .div2{width: 33.33;}
+	input{width: 40%}
+		  .catagoria{width: 10%;}
 		  
 		  
 	
@@ -480,23 +589,45 @@ EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical
 	.col-xs-1{width: 8.33333333%;}
 	.col-xs-0{display:none;}
 	
-	.div1{display: flex;flex-direction: column;}
-		.div2{background-color:rgb(236, 28, 201);}
-	.display{display: block;}
-	.flexcontainer {
+	
+		  
+        
 		
-		flex-direction: column;
-		  flex-basis: 100%;}
-		  .flexcontainer div{flex-basis: 100%;}
-		  input{width: 95%}
-		  .divchild{display: block;}.divchild img{margin-left: 220px;margin-top: 20px;}
-        .catagoria{display: flex; flex-direction: column;margin: auto;}
-		.catagoria h2{margin-top: 0;}
-		.div2{width: 100%;}
 		.menu {margin: 0 auto;
-			
 			display: inline-block;
 		}
+		
+		.bien{
+			color:rgb(59, 10, 240);
+			font-size: 30px;
+			text-align:center;
+			margin: 0 auto;
+			width: 600px;
+			position: absolute; /* hijo */
+			margin: 0;
+			left: 50%;
+			margin-left: -300px;
+			opacity:0.8;
+		}
 	
-	}
 
+	.bien{font-weight: bold;color: #09ff00;}
+	.navbar{display: block; justify-content: center;height: 300px;}
+input{ width: 100%;}
+ul li{display: flex;justify-content: space-between;margin-left: 25px;}
+.imagenpagina h3{font-size: 25px;}
+.divchild{margin: 0 auto;}
+.padrecatagoria ,.search,.divchild, .div2{justify-content: center;}
+#articulos{justify-content: center;}
+#imagenMarco img{justify-content: center;}
+#imagenMarco{width: 100%;}
+dialog{width: 50%;margin-top:0;height: auto;}
+}
+  
+  
+  /* Fare öğenin üzerine geldiğinde */
+  li:hover {
+	background-color: #799bb3; /* Örnek: Biraz daha koyu bir renk */
+ height: 40px;
+
+}
