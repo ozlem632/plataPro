@@ -1,11 +1,11 @@
 let cartItems = [
     {
-        "urun_id": "yuzuk_001",
+        "id": 1,
         "marka": "PLATAPRO",
-        "model": "",
+        "model": "kalpli",
         "renk": "Altin",
         "tasarim": "Yildiz",
-        "fiyat": 1500,
+        "precio": 15,
         "detay": {
             "malzeme": "Altin",
             "tasarim_detayi": "Yildiz şeklinde tasarım",
@@ -14,12 +14,13 @@ let cartItems = [
         "img_url": "IMG/yuzuka.jpeg",
     },
     {
-        "urun_id": "yuzuk_002",
+
+        "id": 2,
         "marka": "PLATAPRO",
-        "model": "Model2",
+        "model": "tugra",
         "renk": "Gumus",
         "tasarim": "Kalp",
-        "fiyat": 1200,
+        "precio": 12,
         "detay": {
             "malzeme": "Gümüş",
             "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -27,12 +28,12 @@ let cartItems = [
         },
         "img_url": "IMG/yuzukb.jpeg"
     },{
-        "urun_id": "yuzuk_002",
+        "id": 3,
         "marka": "PLATAPRO",
-        "model": "Model2",
+        "model": "basak",
         "renk": "Gumus",
         "tasarim": "Kalp",
-        "fiyat": 1200,
+        "precio": 12,
         "detay": {
             "malzeme": "Gümüş",
             "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -40,12 +41,12 @@ let cartItems = [
         },
         "img_url": "IMG/yuzuk7.jpeg"
     },{
-        "urun_id": "yuzuk_002",
+        "id": 4,
         "marka": "PLATAPRO",
-        "model": "Model2",
+        "model": "damla",
         "renk": "Gumus",
          "tasarim": "Kalp",
-        "fiyat": 1200,
+        "precio": 12,
         "detay": {
             "malzeme": "Gümüş",
             "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -53,12 +54,12 @@ let cartItems = [
         },
         "img_url": "IMG/YUZUK3.jpeg"
     }, {
-        "urun_id": "yuzuk_002",
+        "id": 5,
         "marka": "PLATAPRO",
         "model": "Model2",
         "renk": "Gumus",
         "tasarim": "Kalp",
-        "fiyat": 1200,
+        "precio": 12,
         "detay": {
             "malzeme": "Gümüş",
             "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -67,12 +68,12 @@ let cartItems = [
         "img_url": "IMG/YUZUK2.jpeg"
     }, 
     {
-            "urun_id": "yuzuk_002",
+            "id": 6,
             "marka": "PLATAPRO",
             "model": "Model2",
             "renk": "Gumus",
             "tasarim": "Kalp",
-            "fiyat": 1200,
+            "precio": 12,
             "detay": {
                 "malzeme": "Gümüş",
                 "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -80,12 +81,12 @@ let cartItems = [
             },
             "img_url": "IMG/yuzuktugrali.jpg" }, 
              {
-                "urun_id": "yuzuk_002",
+                "id": 7,
                 "marka": "PLATAPRO",
                 "model": "Model2",
                 "renk": "Gumus",
                 "tasarim": "Kalp",
-                "fiyat": 1200,
+                "precio": 12,
                 "detay": {
                     "malzeme": "Gümüş",
                     "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -93,37 +94,38 @@ let cartItems = [
                 },
                 "img_url": "IMG/maviyuzuk.webp" },  
                 {
-                    "urun_id": "yuzuk_002",
+                    "id": 8,
                     "marka": "YAGIZ BARAN",
                     "model": "Model2",
                     "renk": "Gumus",
                     "tasarim": "Kalp",
-                    "fiyat": 1200,
+                    "precio": 12,
                     "detay": {
                         "malzeme": "Gümüş",
                         "tasarim_detayi": "Kalp şeklinde tasarım",
                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
+        
                     },
                     "img_url": "IMG/yuzuka.jpeg" },  
                     {
-                        "urun_id": "yuzuk_002",
+                        "id": 9,
                         "marka": "PLATAPRO",
                         "model": "Model2",
                         "renk": "Gumus",
                         "tasarim": "Kalp",
-                        "fiyat": 1200,
+                        "precio": 12,
                         "detay": {
                             "malzeme": "Gümüş",
                             "tasarim_detayi": "Kalp şeklinde tasarım",
                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                         },
                         "img_url": "IMG/YUZUK7.jpeg" },  {
-                            "urun_id": "yuzuk_002",
+                            "id": 10,
                             "marka": "PLATAPRO",
                             "model": "Model2",
                             "renk": "Gumus",
                             "tasarim": "Kalp",
-                            "fiyat": 1200,
+                            "precio": 12,
                             "detay": {
                                 "malzeme": "Gümüş",
                                 "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -131,66 +133,64 @@ let cartItems = [
                             },
                             "img_url": "IMG/yuzukaltinceyrek.jpg" }, 
                              {
-            "urun_id": "yuzuk_002",
+            "id": 11,
             "marka": "PLATAPRO",
             "model": "Model2",
             "renk": "Gumus",
             "tasarim": "Kalp",
-            "fiyat": 1200,
+            "precio": 12,
             "detay": {
                 "malzeme": "Gümüş",
                 "tasarim_detayi": "Kalp şeklinde tasarım",
                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
             },
             "img_url": "IMG/yuzukc.jpeg" },  {
-                "urun_id": "yuzuk_002",
+                "id": "2",
                 "marka": "PLATAPRO",
                 "model": "Model2",
                 "renk": "Gumus",
                 "tasarim": "Kalp",
-                "fiyat": 1200,
+                "precio": 12,
                 "detay": {
                     "malzeme": "Gümüş",
                     "tasarim_detayi": "Kalp şeklinde tasarım",
                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                 },
                 "img_url": "IMG/yuzukb.jpeg" }, {
-                    "urun_id": "yuzuk_002",
+                    "id": 12,
                     "marka": "PLATAPRO",
                     "model": "Model2",
                     "renk": "Gumus",
                     "tasarim": "Kalp",
-                    "fiyat": 1200,
+                    "precio": 12,
                     "detay": {
                         "malzeme": "Gümüş",
                         "tasarim_detayi": "Kalp şeklinde tasarım",
                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                     },
                     "img_url": "IMG/bileziy.jpg" },  {
-                        "urun_id": "yuzuk_002",
+                        "id": 13,
                         "marka": "PLATAPRO",
                         "model": "Model2",
                         "renk": "Gumus",
                         "tasarim": "Kalp",
-                        "fiyat": 1200,
+                        "precio": 12,
                         "detay": {
                             "malzeme": "Gümüş",
                             "tasarim_detayi": "Kalp şeklinde tasarım",
                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                         },
                         "img_url": "IMG/bileziy.jpg" }, 
-                       
-                   
-               
-            ];
+                       ];
+                       const baseDeDatos = cartItems;
             let cartPulseras = [
                 {
-                    "urun_id": "yuzuk_001",
+                    "id": 1,
                     "marka": "PLATAPRO",
-                    "model": "",
+                    "model": "hasir",
                     "renk": "Altin",
                     "tasarim": "Yildiz",
-                    "fiyat": 1500,
+                    "precio": 15,
                     "detay": {
                         "malzeme": "Altin",
                         "tasarim_detayi": "Yildiz şeklinde tasarım",
@@ -199,12 +199,12 @@ let cartItems = [
                     "img_url": "IMG/bilezikf.jpeg",
                 },
                 {
-                    "urun_id": "yuzuk_002",
+                    "id": 2,
                     "marka": "PLATAPRO",
-                    "model": "Model2",
+                    "model": "mavi",
                     "renk": "Gumus",
                     "tasarim": "Kalp",
-                    "fiyat": 1200,
+                    "precio": 12,
                     "detay": {
                         "malzeme": "Gümüş",
                         "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -212,12 +212,12 @@ let cartItems = [
                     },
                     "img_url": "IMG/bilezikg.jpeg"
                 },{
-                    "urun_id": "yuzuk_002",
+                    "id": 3,
                     "marka": "PLATAPRO",
-                    "model": "Model2",
+                    "model": "saglik",
                     "renk": "Gumus",
                     "tasarim": "Kalp",
-                    "fiyat": 1200,
+                    "precio": 12,
                     "detay": {
                         "malzeme": "Gümüş",
                         "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -225,12 +225,12 @@ let cartItems = [
                     },
                     "img_url": "IMG/bilezikm.jpeg"
                 },{
-                    "urun_id": "yuzuk_002",
+                    "id": 4,
                     "marka": "PLATAPRO",
-                    "model": "Model2",
+                    "model": "renkliu",
                     "renk": "Gumus",
                      "tasarim": "Kalp",
-                    "fiyat": 1200,
+                    "precio": 12,
                     "detay": {
                         "malzeme": "Gümüş",
                         "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -238,12 +238,12 @@ let cartItems = [
                     },
                     "img_url": "IMG/bileziks.jpeg"
                 }, {
-                    "urun_id": "yuzuk_002",
+                    "id": 5,
                     "marka": "PLATAPRO",
-                    "model": "Model2",
+                    "model": "gumus",
                     "renk": "Gumus",
                     "tasarim": "Kalp",
-                    "fiyat": 1200,
+                    "precio": 12,
                     "detay": {
                         "malzeme": "Gümüş",
                         "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -252,12 +252,12 @@ let cartItems = [
                     "img_url": "IMG/bilezikd.jpeg"
                 }, 
                 {
-                        "urun_id": "yuzuk_002",
+                        "id": 6,
                         "marka": "PLATAPRO",
-                        "model": "Model2",
+                        "model": "3lu",
                         "renk": "Gumus",
                         "tasarim": "Kalp",
-                        "fiyat": 1200,
+                        "precio": 12,
                         "detay": {
                             "malzeme": "Gümüş",
                             "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -265,12 +265,12 @@ let cartItems = [
                         },
                         "img_url": "IMG/bilezik1.jpeg" }, 
                          {
-                            "urun_id": "yuzuk_002",
+                            "id": 7,
                             "marka": "PLATAPRO",
-                            "model": "Model2",
+                            "model": "ahsap",
                             "renk": "Gumus",
                             "tasarim": "Kalp",
-                            "fiyat": 1200,
+                            "precio": 12,
                             "detay": {
                                 "malzeme": "Gümüş",
                                 "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -278,12 +278,12 @@ let cartItems = [
                             },
                             "img_url": "IMG/bilezik2.jpeg" },  
                             {
-                                "urun_id": "yuzuk_002",
+                                "id": 8,
                                 "marka": "YAGIZ BARAN",
-                                "model": "Model2",
+                                "model": "hasir",
                                 "renk": "Gumus",
                                 "tasarim": "Kalp",
-                                "fiyat": 1200,
+                                "precio": 12,
                                 "detay": {
                                     "malzeme": "Gümüş",
                                     "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -291,24 +291,24 @@ let cartItems = [
                                 },
                                 "img_url": "IMG/bilezikc.jpeg" },  
                                 {
-                                    "urun_id": "yuzuk_002",
+                                    "id": 9,
                                     "marka": "PLATAPRO",
-                                    "model": "Model2",
+                                    "model": "cicek",
                                     "renk": "Gumus",
                                     "tasarim": "Kalp",
-                                    "fiyat": 1200,
+                                    "precio": 12,
                                     "detay": {
                                         "malzeme": "Gümüş",
                                         "tasarim_detayi": "Kalp şeklinde tasarım",
                                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                     },
                                     "img_url": "IMG/bileziy.jpg" },  {
-                                        "urun_id": "yuzuk_002",
+                                        "id": 10,
                                         "marka": "PLATAPRO",
-                                        "model": "Model2",
+                                        "model": "kavunici",
                                         "renk": "Gumus",
                                         "tasarim": "Kalp",
-                                        "fiyat": 1200,
+                                        "precio": 12,
                                         "detay": {
                                             "malzeme": "Gümüş",
                                             "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -316,48 +316,48 @@ let cartItems = [
                                         },
                                         "img_url": "IMG/bilezikyeni.jpg" }, 
                                          {
-                        "urun_id": "yuzuk_002",
+                        "id": 11,
                         "marka": "PLATAPRO",
                         "model": "Model2",
                         "renk": "Gumus",
                         "tasarim": "Kalp",
-                        "fiyat": 1200,
+                        "precio": 12,
                         "detay": {
                             "malzeme": "Gümüş",
                             "tasarim_detayi": "Kalp şeklinde tasarım",
                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                         },
                         "img_url": "IMG/bilezikd.jpeg" },  {
-                            "urun_id": "yuzuk_002",
+                            "id": "2",
                             "marka": "PLATAPRO",
                             "model": "Model2",
                             "renk": "Gumus",
                             "tasarim": "Kalp",
-                            "fiyat": 1200,
+                            "precio": 12,
                             "detay": {
                                 "malzeme": "Gümüş",
                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                             },
                             "img_url": "IMG/bileziy.jpg" },  {
-                                "urun_id": "yuzuk_002",
+                                "id": "2",
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
                                 "tasarim": "Kalp",
-                                "fiyat": 1200,
+                                "precio": 12,
                                 "detay": {
                                     "malzeme": "Gümüş",
                                     "tasarim_detayi": "Kalp şeklinde tasarım",
                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                 },
                                 "img_url": "IMG/bileziy.jpg" },  {
-                                    "urun_id": "yuzuk_002",
+                                    "id": "2",
                                     "marka": "PLATAPRO",
                                     "model": "Model2",
                                     "renk": "Gumus",
                                     "tasarim": "Kalp",
-                                    "fiyat": 1200,
+                                    "precio": 12,
                                     "detay": {
                                         "malzeme": "Gümüş",
                                         "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -365,22 +365,17 @@ let cartItems = [
                                     },
                                     "img_url": "IMG/bileziy.jpg" }, 
                                    
-                               
-                           
-                       
-                       
-                       
-                       
-                       
-                        ];
+                               ];
+
+                               const baseDePulseras = cartPulseras;
                         let cartPendientes = [
                             {
-                                "urun_id": "yuzuk_001",
+                                "id": 1,
                                 "marka": "PLATAPRO",
-                                "model": "",
+                                "model": "kupe",
                                 "renk": "Altin",
                                 "tasarim": "Yildiz",
-                                "fiyat": 1500,
+                                "precio": 15,
                                 "detay": {
                                     "malzeme": "Altin",
                                     "tasarim_detayi": "Yildiz şeklinde tasarım",
@@ -389,12 +384,12 @@ let cartItems = [
                                 "img_url": "IMG/kupe5.jpeg",
                             },
                             {
-                                "urun_id": "yuzuk_002",
+                                "id": "2",
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
                                 "tasarim": "Kalp",
-                                "fiyat": 1200,
+                                "precio": 12,
                                 "detay": {
                                     "malzeme": "Gümüş",
                                     "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -402,12 +397,12 @@ let cartItems = [
                                 },
                                 "img_url": "IMG/kupe10.jpeg"
                             },{
-                                "urun_id": "yuzuk_002",
+                                "id": "2",
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
                                 "tasarim": "Kalp",
-                                "fiyat": 1200,
+                                "precio": 12,
                                 "detay": {
                                     "malzeme": "Gümüş",
                                     "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -415,12 +410,12 @@ let cartItems = [
                                 },
                                 "img_url": "IMG/kupe11.jpeg"
                             },{
-                                "urun_id": "yuzuk_002",
+                                "id": "2",
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
                                  "tasarim": "Kalp",
-                                "fiyat": 1200,
+                                "precio": 12,
                                 "detay": {
                                     "malzeme": "Gümüş",
                                     "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -428,12 +423,12 @@ let cartItems = [
                                 },
                                 "img_url": "IMG/kupe11.jpeg"
                             }, {
-                                "urun_id": "yuzuk_002",
+                                "id": "2",
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
                                 "tasarim": "Kalp",
-                                "fiyat": 1200,
+                                "precio": 12,
                                 "detay": {
                                     "malzeme": "Gümüş",
                                     "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -442,12 +437,12 @@ let cartItems = [
                                 "img_url": "IMG/kupe12.jpeg"
                             }, 
                             {
-                                    "urun_id": "yuzuk_002",
+                                    "id": "2",
                                     "marka": "PLATAPRO",
                                     "model": "Model2",
                                     "renk": "Gumus",
                                     "tasarim": "Kalp",
-                                    "fiyat": 1200,
+                                    "precio": 12,
                                     "detay": {
                                         "malzeme": "Gümüş",
                                         "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -455,12 +450,12 @@ let cartItems = [
                                     },
                                     "img_url": "IMG/kupe13.jpeg" }, 
                                      {
-                                        "urun_id": "yuzuk_002",
+                                        "id": "2",
                                         "marka": "PLATAPRO",
                                         "model": "Model2",
                                         "renk": "Gumus",
                                         "tasarim": "Kalp",
-                                        "fiyat": 1200,
+                                        "precio": 12,
                                         "detay": {
                                             "malzeme": "Gümüş",
                                             "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -468,12 +463,12 @@ let cartItems = [
                                         },
                                         "img_url": "IMG/kupe14.jpeg" },  
                                         {
-                                            "urun_id": "yuzuk_002",
+                                            "id": "2",
                                             "marka": "YAGIZ BARAN",
                                             "model": "Model2",
                                             "renk": "Gumus",
                                             "tasarim": "Kalp",
-                                            "fiyat": 1200,
+                                            "precio": 12,
                                             "detay": {
                                                 "malzeme": "Gümüş",
                                                 "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -481,24 +476,24 @@ let cartItems = [
                                             },
                                             "img_url": "IMG/kupe15.jpeg" },  
                                             {
-                                                "urun_id": "yuzuk_002",
+                                                "id": "2",
                                                 "marka": "PLATAPRO",
                                                 "model": "Model2",
                                                 "renk": "Gumus",
                                                 "tasarim": "Kalp",
-                                                "fiyat": 1200,
+                                                "precio": 12,
                                                 "detay": {
                                                     "malzeme": "Gümüş",
                                                     "tasarim_detayi": "Kalp şeklinde tasarım",
                                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                 },
                                                 "img_url": "IMG/kupe17.jpeg" },  {
-                                                    "urun_id": "yuzuk_002",
+                                                    "id": "2",
                                                     "marka": "PLATAPRO",
                                                     "model": "Model2",
                                                     "renk": "Gumus",
                                                     "tasarim": "Kalp",
-                                                    "fiyat": 1200,
+                                                    "precio": 12,
                                                     "detay": {
                                                         "malzeme": "Gümüş",
                                                         "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -506,48 +501,48 @@ let cartItems = [
                                                     },
                                                     "img_url": "IMG/kupea.jpeg" }, 
                                                      {
-                                    "urun_id": "yuzuk_002",
+                                    "id": "2",
                                     "marka": "PLATAPRO",
                                     "model": "Model2",
                                     "renk": "Gumus",
                                     "tasarim": "Kalp",
-                                    "fiyat": 1200,
+                                    "precio": 12,
                                     "detay": {
                                         "malzeme": "Gümüş",
                                         "tasarim_detayi": "Kalp şeklinde tasarım",
                                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                     },
                                     "img_url": "IMG/kupeb.jpeg" },  {
-                                        "urun_id": "yuzuk_002",
+                                        "id": "2",
                                         "marka": "PLATAPRO",
                                         "model": "Model2",
                                         "renk": "Gumus",
                                         "tasarim": "Kalp",
-                                        "fiyat": 1200,
+                                        "precio": 12,
                                         "detay": {
                                             "malzeme": "Gümüş",
                                             "tasarim_detayi": "Kalp şeklinde tasarım",
                                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                         },
                                         "img_url": "IMG/kupec.jpeg" }, {
-                                            "urun_id": "yuzuk_002",
+                                            "id": "2",
                                             "marka": "PLATAPRO",
                                             "model": "Model2",
                                             "renk": "Gumus",
                                             "tasarim": "Kalp",
-                                            "fiyat": 1200,
+                                            "precio": 12,
                                             "detay": {
                                                 "malzeme": "Gümüş",
                                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                             },
                                             "img_url": "IMG/kuped.jpeg" },  {
-                                                "urun_id": "yuzuk_002",
+                                                "id": "2",
                                                 "marka": "PLATAPRO",
                                                 "model": "Model2",
                                                 "renk": "Gumus",
                                                 "tasarim": "Kalp",
-                                                "fiyat": 1200,
+                                                "precio": 12,
                                                 "detay": {
                                                     "malzeme": "Gümüş",
                                                     "tasarim_detayi": "Kalp şeklinde tasarım",
@@ -556,196 +551,190 @@ let cartItems = [
                                                 "img_url": "IMG/kupee.jpeg" }, 
                                                
                                            
-                                       
-                                    ];
-                                    let cartCollares = [
+                                       ];
+                                   
+                                       const baseDePendientes = cartPendientes; 
+                                   
+                                       let cartCollares = [
                                         {
-                                            "urun_id": "yuzuk_001",
+                                            "id": 1,
                                             "marka": "PLATAPRO",
-                                            "model": "",
+                                            "model": "altin",
                                             "renk": "Altin",
                                             "tasarim": "Yildiz",
-                                            "fiyat": 1500,
+                                            "precio": 15,
                                             "detay": {
                                                 "malzeme": "Altin",
                                                 "tasarim_detayi": "Yildiz şeklinde tasarım",
                                                 "tasima_ozelligi": "Kutusunda güvenli bir şekilde taşınabilir"
                                             },
-                                            "img_url": "IMG/bilezikf.jpeg",
+                                            "img_url": "IMG/kolye1.jpeg",
                                         },
                                         {
-                                            "urun_id": "yuzuk_002",
+                                            "id": 2,
                                             "marka": "PLATAPRO",
                                             "model": "Model2",
                                             "renk": "Gumus",
                                             "tasarim": "Kalp",
-                                            "fiyat": 1200,
+                                            "precio": 12,
                                             "detay": {
                                                 "malzeme": "Gümüş",
                                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                             },
-                                            "img_url": "IMG/bilezikg.jpeg"
+                                            "img_url": "IMG/kolye2.jpeg"
                                         },{
-                                            "urun_id": "yuzuk_002",
+                                            "id": 3,
                                             "marka": "PLATAPRO",
                                             "model": "Model2",
                                             "renk": "Gumus",
                                             "tasarim": "Kalp",
-                                            "fiyat": 1200,
+                                            "precio": 12,
                                             "detay": {
                                                 "malzeme": "Gümüş",
                                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                             },
-                                            "img_url": "IMG/bilezikm.jpeg"
+                                            "img_url": "IMG/kolye10.jpeg"
                                         },{
-                                            "urun_id": "yuzuk_002",
+                                            "id": 4,
                                             "marka": "PLATAPRO",
                                             "model": "Model2",
                                             "renk": "Gumus",
                                              "tasarim": "Kalp",
-                                            "fiyat": 1200,
+                                            "precio": 12,
                                             "detay": {
                                                 "malzeme": "Gümüş",
                                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                             },
-                                            "img_url": "IMG/bileziks.jpeg"
+                                            "img_url": "IMG/kolye11.jpeg"
                                         }, {
-                                            "urun_id": "yuzuk_002",
+                                            "id": 5,
                                             "marka": "PLATAPRO",
                                             "model": "Model2",
                                             "renk": "Gumus",
                                             "tasarim": "Kalp",
-                                            "fiyat": 1200,
+                                            "precio": 12,
                                             "detay": {
                                                 "malzeme": "Gümüş",
                                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                             },
-                                            "img_url": "IMG/bilezikd.jpeg"
+                                            "img_url": "IMG/kolye12.jpeg"
                                         }, 
                                         {
-                                                "urun_id": "yuzuk_002",
+                                                "id": 6,
                                                 "marka": "PLATAPRO",
                                                 "model": "Model2",
                                                 "renk": "Gumus",
                                                 "tasarim": "Kalp",
-                                                "fiyat": 1200,
+                                                "precio": 12,
                                                 "detay": {
                                                     "malzeme": "Gümüş",
                                                     "tasarim_detayi": "Kalp şeklinde tasarım",
                                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                 },
-                                                "img_url": "IMG/bilezik1.jpeg" }, 
+                                                "img_url": "IMG/kolye13.jpeg" }, 
                                                  {
-                                                    "urun_id": "yuzuk_002",
+                                                    "id": 7,
                                                     "marka": "PLATAPRO",
                                                     "model": "Model2",
                                                     "renk": "Gumus",
                                                     "tasarim": "Kalp",
-                                                    "fiyat": 1200,
+                                                    "precio": 12,
                                                     "detay": {
                                                         "malzeme": "Gümüş",
                                                         "tasarim_detayi": "Kalp şeklinde tasarım",
                                                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                     },
-                                                    "img_url": "IMG/bilezik2.jpeg" },  
+                                                    "img_url": "IMG/kolye14.jpeg" },  
                                                     {
-                                                        "urun_id": "yuzuk_002",
+                                                        "id": 8,
                                                         "marka": "YAGIZ BARAN",
                                                         "model": "Model2",
                                                         "renk": "Gumus",
                                                         "tasarim": "Kalp",
-                                                        "fiyat": 1200,
+                                                        "precio": 12,
                                                         "detay": {
                                                             "malzeme": "Gümüş",
                                                             "tasarim_detayi": "Kalp şeklinde tasarım",
                                                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                         },
-                                                        "img_url": "IMG/bilezikc.jpeg" },  
+                                                        "img_url": "IMG/kolye15.jpeg" },  
                                                         {
-                                                            "urun_id": "yuzuk_002",
+                                                            "id": 9,
                                                             "marka": "PLATAPRO",
                                                             "model": "Model2",
                                                             "renk": "Gumus",
                                                             "tasarim": "Kalp",
-                                                            "fiyat": 1200,
+                                                            "precio": 12,
                                                             "detay": {
                                                                 "malzeme": "Gümüş",
                                                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                             },
-                                                            "img_url": "IMG/bileziy.jpg" },  {
-                                                                "urun_id": "yuzuk_002",
+                                                            "img_url": "IMG/kolye16.jpeg" },  {
+                                                                "id": 10,
                                                                 "marka": "PLATAPRO",
                                                                 "model": "Model2",
                                                                 "renk": "Gumus",
                                                                 "tasarim": "Kalp",
-                                                                "fiyat": 1200,
+                                                                "precio": 12,
                                                                 "detay": {
                                                                     "malzeme": "Gümüş",
                                                                     "tasarim_detayi": "Kalp şeklinde tasarım",
                                                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                                 },
-                                                                "img_url": "IMG/bilezikyeni.jpg" }, 
+                                                                "img_url": "IMG/kolye18.jpeg" }, 
                                                                  {
-                                                "urun_id": "yuzuk_002",
+                                                "id": 11,
                                                 "marka": "PLATAPRO",
                                                 "model": "Model2",
                                                 "renk": "Gumus",
                                                 "tasarim": "Kalp",
-                                                "fiyat": 1200,
+                                                "precio": 12,
                                                 "detay": {
                                                     "malzeme": "Gümüş",
                                                     "tasarim_detayi": "Kalp şeklinde tasarım",
                                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                 },
-                                                "img_url": "IMG/bilezikd.jpeg" },  {
-                                                    "urun_id": "yuzuk_002",
+                                                "img_url": "IMG/kolye19.jpeg" },  {
+                                                    "id": 12,
                                                     "marka": "PLATAPRO",
                                                     "model": "Model2",
                                                     "renk": "Gumus",
                                                     "tasarim": "Kalp",
-                                                    "fiyat": 1200,
+                                                    "precio": 12,
                                                     "detay": {
                                                         "malzeme": "Gümüş",
                                                         "tasarim_detayi": "Kalp şeklinde tasarım",
                                                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                     },
-                                                    "img_url": "IMG/bileziy.jpg" },  {
-                                                        "urun_id": "yuzuk_002",
+                                                    "img_url": "IMG/kolyec.jpeg" },  {
+                                                        "id": 13,
                                                         "marka": "PLATAPRO",
                                                         "model": "Model2",
                                                         "renk": "Gumus",
                                                         "tasarim": "Kalp",
-                                                        "fiyat": 1200,
+                                                        "precio": 12,
                                                         "detay": {
                                                             "malzeme": "Gümüş",
                                                             "tasarim_detayi": "Kalp şeklinde tasarım",
                                                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                         },
-                                                        "img_url": "IMG/bileziy.jpg" },  {
-                                                            "urun_id": "yuzuk_002",
+                                                        "img_url": "IMG/kolyed.jpeg" },  {
+                                                            "id": 14,
                                                             "marka": "PLATAPRO",
                                                             "model": "Model2",
                                                             "renk": "Gumus",
                                                             "tasarim": "Kalp",
-                                                            "fiyat": 1200,
+                                                            "precio": 12,
                                                             "detay": {
                                                                 "malzeme": "Gümüş",
                                                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                             },
-                                                            "img_url": "IMG/bileziy.jpg" }, 
-                                                           
-                                                       
-                                                   
-                                               
-                                               
-                                               
-                                               
-                                               
-                                                ];
-                                    
+                                                            "img_url": "IMG/kolyed.jpeg" }, 
+                 ];
+                 const baseDeCollares = cartCollares;                

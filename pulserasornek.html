@@ -9,163 +9,198 @@
 <link href="https://fonts.googleapis.com/css2?family=Honk:SHLN@100&family=Whisper&display=swap" rel="stylesheet">
 
 </head>
-
-
-<body>
-  
-
-<div class="navbar">
-    <div class="divchild">
-    <img src="IMG/tulips.png" width="50px" height="50px" >
-    <h1>Platapro</h1></div>
-  <div class="padrecatagoria">
-    <div class="catagoria">
-      <img src="IMG/icons8-hamburger-100.png">
-    
-     <!--  <ul> -->
-        <!-- <li> --> <!-- <div> <h2>CATALOG</h2></div>  -->
-             <div class="menu">
-              <div class="menu-trigger" id="hamburger"><h4>CATAGORIAS</h></div>
+ <body>
+        <!-- Carrito -->
+        <dialog id="carritoVentana">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span>&euro;</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            <button id="boton-cerrar" class="btn btn-danger">Cerrar X</button>
+        </dialog>
+        
+        <!-- JavaScript -->
+        <script>
+            const carritoVentana = document.getElementById('carritoVentana');
+            const botonCerrar = document.getElementById('boton-cerrar');
+            
+        
+            window.addEventListener('click', (event) => {
+                if (event.target === carritoVentana || event.target === botonCerrar) {
+                    carritoVentana.close();
+                }
+            });
+        </script>
+        
+        
+        <header id="header">
+        </header>
+        
+        
+        <script src="productos.js"></script>
+        <script src="carritopulseras.js"></script>
       
-        <div class="submenu" id="submenu">
-            <a href="anillornek.html" target="_blank">ANILLOS</a>
-            <a href="pulserasornek.html"target="_blank" >PULSERAS</a>
-            <a href="collaresornek.html" target="_blank">COLLARES</a>
-            <a href="ornekpendientes.html" target="_blank">PENDIENTES</a>
-        </div>
-  
-
-    <script src="scripts.js"></script>
-      
-<!--       <ul>
-      <li><a href="anillornek.html">ANILLOS</a></li>
-      <li><a href="pulserasornek.html">PULSERAS</a></li>
-      <li><a href="collaresornek.html">COLLARES</a></li>
-      <li><a href="ornekpendientes.html">PENDIENTES</a></li>
-     </ul>
-    </li>
-    </ul> </div>
-
-</div> -->
-</div>
-</div>
-</div>
-<div class="search">
-  <img src="IMG/search.png" width="65px" height="75px">
-  <input type="text" style="border-radius: 12px; padding: 20px 170px;margin: 15px;margin-left: 0;" placeholder="Busca.....">
-</div>
-
-
-<div class="div2">
-<ul>
-    <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
-    <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
-    <li><img src="IMG/shopping-cart.png" width="40px" id="cart-icon"><span id="cart-count" class="cart-icon"></li><li><h2 style="margin-top: 0;;">0</h2></span>
+       
+        
+        
+        
+        
+        <div class="navbar">
+            <div class="divchild">
+            <img src="IMG/tulips.png" width="50px" height="50px" >
+            <h1>Platapro</h1></div>
+          <div class="padrecatagoria">
+            <div class="catagoria">
+              <img src="IMG/icons8-hamburger-100.png">
+            
+             <!--  <ul> -->
+                <!-- <li> --> <!-- <div> <h2>CATALOG</h2></div>  -->
+                     <div class="menu">
+                      <div class="menu-trigger" id="hamburger"><h4>CATAGORIAS</h></div>
+              
+                <div class="submenu" id="submenu">
+                    <a href="anillornek.html" target="_blank">ANILLOS</a>
+                    <a href="pulserasornek.html"target="_blank" >PULSERAS</a>
+                    <a href="collaresornek.html" target="_blank">COLLARES</a>
+                    <a href="ornekpendientes.html" target="_blank">PENDIENTES</a>
+                </div>
           
-        <!-- Sepet Açılır Penceresi -->
-        <div id="cart-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <div id="cart-content"></div>
+        
+            <script src="scripts.js"></script>
+              
+        <!--       <ul>
+              <li><a href="anillornek.html">ANILLOS</a></li>
+              <li><a href="pulserasornek.html">PULSERAS</a></li>
+              <li><a href="collaresornek.html">COLLARES</a></li>
+              <li><a href="ornekpendientes.html">PENDIENTES</a></li>
+             </ul>
             </li>
+            </ul> </div>
         
-     <li id="iniciar"><h3>INICIAR</h3></li>
-    <li id="registrar"><h3>REGISTRAR</h3></li>
-  </ul>
-  </div>
-   </div>
- 
-  <div id="registerModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" id="closeModal">&times;</span>
-        <h4>Registro</h4>
-        <form id="registerForm">
-            <input type="text" class="form-input" placeholder="Nombre de usuario" required>
-            <input type="email" class="form-input" placeholder="Correo electrónico" required>
-            <input type="password" class="form-input" placeholder="Contraseña" required>
-            <button type="submit">Registrarse</button>
-        </form>
+        </div> -->
+        </div>
+        </div>
+        </div>
+        <div class="search">
+          <img src="IMG/search.png" width="65px" height="75px">
+          <input type="text" style="border-radius: 12px; padding: 20px 170px;margin: 15px;margin-left: 0;" placeholder="Busca.....">
+        </div>
         
-      </div>
-</div>
-<div id="loginModal" class="modal">
-  <div class="modal-content">
-      <span class="close-btn" id="closeLoginModal">&times;</span>
-      <h4>Iniciar Sesión</h4>
-      <form id="loginForm">
-          <input type="email" class="form-input" placeholder="Correo electrónico" required>
-          <input type="password" class="form-input" placeholder="Contraseña" required>
-          <button type="submit">Iniciar Sesión</button>
-      </form>
-  </div>
-</div>
-</div>
-</div>  
-
-
-<script>
-  // JavaScript para controlar la ventana modal
-  const openModalBtn = document.getElementById('registrar');
-  const closeModal = document.getElementById('closeModal');
-  const registerModal = document.getElementById('registerModal');
-
-  openModalBtn.addEventListener('click', () => {
-      registerModal.style.display = 'block';
-      
-  });
-
-  closeModal.addEventListener('click', () => {
-      registerModal.style.display = 'none';
-  });
-
-  // Cierra la ventana modal si el usuario hace clic fuera de ella
-  window.addEventListener('click', (event) => {
-      if (event.target === registerModal) {
-          registerModal.style.display = 'none';
-          
-      }
-  });
-
-  // Evitar que el formulario se envíe
-  const registerForma = document.getElementById('registerForm');
-  registerForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      // Aquí puedes agregar la lógica para registrar al usuario
-      alert('Usuario registrado correctamente');
-      registerModal.style.display = 'none';
-  });
-</script>
-<script>
-    // JavaScript para controlar la ventana modal de inicio de sesión
-    const openLoginModal = document.getElementById('iniciar');
-    const closeLoginModal = document.getElementById('closeLoginModal');
-    const loginModal = document.getElementById('loginModal');
-
-    openLoginModal.addEventListener('click', () => {
-        loginModal.style.display = 'block';
-    });
-
-    closeLoginModal.addEventListener('click', () => {
-        loginModal.style.display = 'none';
-    });
-
-    // Cierra la ventana modal si el usuario hace clic fuera de ella
-    window.addEventListener('click', (event) => {
-        if (event.target === loginModal) {
-            loginModal.style.display = 'none';
-        }
-    });
-
-    // Evitar que el formulario se envíe
-    const loginForm = document.getElementById('loginForm');
-    loginForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        alert('Usuario inició sesión correctamente');
-        loginModal.style.display = 'none';
-    });
-</script>
-<a href="index.html" target="_blank"><h1 style="display: flex;justify-content: flex-start; color: red;">HOME</h1></a>
-   
+        
+        <div class="div2">
+        <ul>
+            <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
+            <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
+            
+            <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></li><li></h2></span> 
+                  
+                <!-- Sepet Açılır Penceresi -->
+                <div id="cart-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <div id="cart-content"></div>
+                    </li>
+               
+             <li id="iniciar"><h3>INICIAR</h3></li>
+            <li id="registrar"><h3>REGISTRAR</h3></li>
+          </ul>
+          </div>
+           </div>
+         
+          <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h4>Registro</h4>
+                <form id="registerForm">
+                    <input type="text" class="form-input" placeholder="Nombre de usuario" required>
+                    <input type="email" class="form-input" placeholder="Correo electrónico" required>
+                    <input type="password" class="form-input" placeholder="Contraseña" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+                
+              </div>
+        </div>
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+              <span class="close-btn" id="closeLoginModal">&times;</span>
+              <h4>Iniciar Sesión</h4>
+              <form id="loginForm">
+                  <input type="email" class="form-input" placeholder="Correo electrónico" required>
+                  <input type="password" class="form-input" placeholder="Contraseña" required>
+                  <button type="submit">Iniciar Sesión</button>
+              </form>
+          </div>
+        </div>
+        </div>
+        </div>  
+        
+        
+        <script>
+          // JavaScript para controlar la ventana modal
+          const openModalBtn = document.getElementById('registrar');
+          const closeModal = document.getElementById('closeModal');
+          const registerModal = document.getElementById('registerModal');
+        
+          openModalBtn.addEventListener('click', () => {
+              registerModal.style.display = 'block';
+              
+          });
+        
+          closeModal.addEventListener('click', () => {
+              registerModal.style.display = 'none';
+          });
+        
+          // Cierra la ventana modal si el usuario hace clic fuera de ella
+          window.addEventListener('click', (event) => {
+              if (event.target === registerModal) {
+                  registerModal.style.display = 'none';
+                  
+              }
+          });
+        
+          // Evitar que el formulario se envíe
+          const registerForma = document.getElementById('registerForm');
+          registerForm.addEventListener('submit', (event) => {
+              event.preventDefault();
+              // Aquí puedes agregar la lógica para registrar al usuario
+              alert('Usuario registrado correctamente');
+              registerModal.style.display = 'none';
+          });
+        </script>
+        <script>
+            // JavaScript para controlar la ventana modal de inicio de sesión
+            const openLoginModal = document.getElementById('iniciar');
+            const closeLoginModal = document.getElementById('closeLoginModal');
+            const loginModal = document.getElementById('loginModal');
+        
+            openLoginModal.addEventListener('click', () => {
+                loginModal.style.display = 'block';
+            });
+        
+            closeLoginModal.addEventListener('click', () => {
+                loginModal.style.display = 'none';
+            });
+        
+            // Cierra la ventana modal si el usuario hace clic fuera de ella
+            window.addEventListener('click', (event) => {
+                if (event.target === loginModal) {
+                    loginModal.style.display = 'none';
+                }
+            });
+        
+            // Evitar que el formulario se envíe
+            const loginForm = document.getElementById('loginForm');
+            loginForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                alert('Usuario inició sesión correctamente');
+                loginModal.style.display = 'none';
+            });
+        </script>
+        <a href="index.html" target="_blank"><h1 style="display: flex;justify-content: flex-start; color: red;">HOME</h1></a>
+           
    
 <h1>PULSERAS</h1>
 
@@ -204,7 +239,7 @@
                 </div>
                 
                 <button onclick="verModal('${items.marka}','${items.img_url}')">VER DETALLE</button>
-                <button id="anadir" onclick="verModal('${items.marka}','${items.img_url}')">AÑADIR CARRITO</button>
+               <button id="anadir" onclick="anyadirProductoAlCarrito(${items.id})">AÑADIR CARRITO</button>
 
                 </div>`;
     }

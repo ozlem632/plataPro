@@ -13,7 +13,41 @@
 
 
 <body>
-  
+<!-- Carrito -->
+<dialog id="carritoVentana">
+    <h2>Carrito</h2>
+    <!-- Elementos del carrito -->
+    <ul id="carrito" class="list-group"></ul>
+    <hr>
+    <!-- Precio total -->
+    <p class="text-right">Total: <span id="total"></span>&euro;</p>
+    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+    <button id="boton-cerrar" class="btn btn-danger">Cerrar X</button>
+</dialog>
+
+<!-- JavaScript -->
+<script>
+    const carritoVentana = document.getElementById('carritoVentana');
+    const botonCerrar = document.getElementById('boton-cerrar');
+    
+
+    window.addEventListener('click', (event) => {
+        if (event.target === carritoVentana || event.target === botonCerrar) {
+            carritoVentana.close();
+        }
+    });
+</script>
+
+
+<header id="header">
+</header>
+
+
+<script src="productos.js"></script>
+
+<script src="carrito.js"></script>
+
+
 
 <div class="navbar">
     <div class="divchild">
@@ -61,7 +95,8 @@
 <ul>
     <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
     <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
-    <li><img src="IMG/shopping-cart.png" width="40px" id="cart-icon"><span id="cart-count" class="cart-icon"></li><li><h2 style="margin-top: 0;;">0</h2></span>
+    
+    <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></li><li></h2></span> 
           
         <!-- Sepet Açılır Penceresi -->
         <div id="cart-modal" class="modal">
@@ -69,7 +104,7 @@
                 <span class="close-button">&times;</span>
                 <div id="cart-content"></div>
             </li>
-        
+       
      <li id="iniciar"><h3>INICIAR</h3></li>
     <li id="registrar"><h3>REGISTRAR</h3></li>
   </ul>
@@ -183,7 +218,7 @@
     -->
 </section>
 
-<dialog id="modalArticulo">
+<dialog id="modalArticulo" class="dialogo">
    <h2 id="modalH2">Anillos</h2>
    <p>descripcion</p>
    <div id="imagenMarco">
@@ -205,7 +240,7 @@
                 </div>
                 
                 <button onclick="verModal('${items.marka}','${items.img_url}')">VER DETALLE</button>
-                <button id="anadir" onclick="verModal('${items.marka}','${items.img_url}')">AÑADIR CARRITO</button>
+                <button id="anadir" onclick="anyadirProductoAlCarrito(${items.id})">AÑADIR CARRITO</button>
 
                 </div>`;
     }
@@ -224,7 +259,7 @@
 </script>
 
 
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 <div class="padrefooter">
     <div>

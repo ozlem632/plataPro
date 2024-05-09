@@ -14,6 +14,41 @@
 
 <body>
   
+<!-- Carrito -->
+<dialog id="carritoVentana">
+    <h2>Carrito</h2>
+    <!-- Elementos del carrito -->
+    <ul id="carrito" class="list-group"></ul>
+    <hr>
+    <!-- Precio total -->
+    <p class="text-right">Total: <span id="total"></span>&euro;</p>
+    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+    <button id="boton-cerrar" class="btn btn-danger">Cerrar X</button>
+</dialog>
+
+<!-- JavaScript -->
+<script>
+    const carritoVentana = document.getElementById('carritoVentana');
+    const botonCerrar = document.getElementById('boton-cerrar');
+    
+
+    window.addEventListener('click', (event) => {
+        if (event.target === carritoVentana || event.target === botonCerrar) {
+            carritoVentana.close();
+        }
+    });
+</script>
+
+
+<header id="header">
+</header>
+
+
+<script src="productos.js"></script>
+
+<script src="carritoDePendientes.js"></script>
+
+
 
 <div class="navbar">
     <div class="divchild">
@@ -61,7 +96,8 @@
 <ul>
     <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
     <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
-    <li><img src="IMG/shopping-cart.png" width="40px" id="cart-icon"><span id="cart-count" class="cart-icon"></li><li><h2 style="margin-top: 0;;">0</h2></span>
+    
+    <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></li><li></h2></span> 
           
         <!-- Sepet Açılır Penceresi -->
         <div id="cart-modal" class="modal">
@@ -69,7 +105,7 @@
                 <span class="close-button">&times;</span>
                 <div id="cart-content"></div>
             </li>
-        
+       
      <li id="iniciar"><h3>INICIAR</h3></li>
     <li id="registrar"><h3>REGISTRAR</h3></li>
   </ul>
@@ -168,7 +204,7 @@
 <a href="index.html" target="_blank"><h1 style="display: flex;justify-content: flex-start; color: red;">HOME</h1></a>
    
    
-<h1>ANILLOS</h1>
+<h1>PENDIENTES</h1>
 
 
 <section id="articulos">
@@ -194,6 +230,7 @@
 <script src="productos.js"></script>
 <script>
     // recorro el objeto flores
+    
     let textoArticulos = '';
     for (items of cartPendientes) {
         textoArticulos += `
@@ -205,7 +242,7 @@
                 </div>
                 
                 <button onclick="verModal('${items.marka}','${items.img_url}')">VER DETALLE</button>
-                <button id="anadir" onclick="verModal('${items.marka}','${items.img_url}')">AÑADIR CARRITO</button>
+                <button id="anadir" onclick="anyadirProductoAlCarrito(${items.id})">AÑADIR CARRITO</button>
 
                 </div>`;
     }

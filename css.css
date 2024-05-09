@@ -11,7 +11,7 @@
     .div2{display: flex;justify-content: space-between;margin-top: 30px;margin-right: 15px;}
 /* anillo.html */
      dialog{width:30%;height:50%;border-radius: 20px;border: solid 3px red;margin: 0 auto;margin-top: 300px;}
-    dialog button{justify-content: center;}
+    dialog button{justify-content: center;margin-top: 60px;}
     #articulos {
          display: flex;
          flex-wrap: wrap;
@@ -48,8 +48,22 @@
            height: 100%;
          object-fit: contain;
      }
+/* carrito */
+#iconoCarrito {
+	position:relative;
+	width: 40px;
+	height: 40px;
 
-
+	  
+	  bottom: 0px;
+	}
+	
+  
+  #numProductos {
+	position: absolute;
+	text-align: center;
+	color: red;
+  }
 	/* .c{display: flex;justify-content: space-between;margin-left: 15px;cursor: pointer;font-weight: bold;} */
 /* .c:hover{padding: 20px;background-color: rgb(248, 35, 134);} */
 tr td img{width: 50%;}
@@ -208,7 +222,7 @@ img{background-size: contain;}
  .display{display: flex;justify-content: space-between;gap: 4px; width:100%;}
 .border{border: solid 2px black;margin-left: 3px;}
 #devam{display: none;}
- dialog button{position: absolute; width: 100px; height: 50px; background-color: rgb(255, 0, 255);font-size: 20px;color: white; text-align: center;}
+ dialog button{width: 100px; height: 50px; background-color: rgb(255, 0, 255);font-size: 20px;color: white; text-align: center;}
 
 
 body {
@@ -485,11 +499,12 @@ h1,h2,h3 {
 	 text-align: center;
 	}
  */
+
 .padrefooter { background-color: black;width: 100%;height: 500px;}
 .footer{display: flex;flex-direction:column;justify-content: center;  cursor: pointer;font-weight: bold;text-align: center;margin-top: 300px;}
 
 .imagenpagina h3{font-size: 40px;position: relative; margin-top: 200px;margin-left: 115px;margin-bottom: 15px;}
-.imagenpagina{display: flex;justify-content: ; flex-wrap: wrap;;}
+.imagenpagina{display: flex;justify-content:center ; flex-wrap: wrap;;}
 .imagenpagina img{border-radius: 50%;border:solid 5px #007BFF;width: 300px;height: 300px;flex-wrap: wrap;margin-left: 100px;margin-bottom: 20px;}
 	#fotoTitulo{
     text-align: center;
@@ -621,7 +636,7 @@ ul li{display: flex;justify-content: space-between;margin-left: 25px;}
 #articulos{justify-content: center;}
 #imagenMarco img{justify-content: center;}
 #imagenMarco{width: 100%;}
-dialog{width: 50%;margin-top:0;height: auto;}
+.dialog{width: 50%;margin-top:0;height: auto;}
 }
   
   
