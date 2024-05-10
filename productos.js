@@ -106,7 +106,7 @@ let cartItems = [
                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
         
                     },
-                    "img_url": "IMG/yuzuka.jpeg" },  
+                    "img_url": "IMG/yuzukemyeni.jpeg" },  
                     {
                         "id": 9,
                         "marka": "PLATAPRO",
@@ -144,7 +144,7 @@ let cartItems = [
                 "tasarim_detayi": "Kalp şeklinde tasarım",
                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
             },
-            "img_url": "IMG/yuzukc.jpeg" },  {
+            "img_url": "IMG/yuzukaltinceyrek1.jpeg" },  {
                 "id": "2",
                 "marka": "PLATAPRO",
                 "model": "Model2",
@@ -156,7 +156,7 @@ let cartItems = [
                     "tasarim_detayi": "Kalp şeklinde tasarım",
                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                 },
-                "img_url": "IMG/yuzukb.jpeg" }, {
+                "img_url": "IMG/yuzukenyeni3.jpeg" }, {
                     "id": 12,
                     "marka": "PLATAPRO",
                     "model": "Model2",
@@ -168,7 +168,7 @@ let cartItems = [
                         "tasarim_detayi": "Kalp şeklinde tasarım",
                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                     },
-                    "img_url": "IMG/bileziy.jpg" },  {
+                    "img_url": "IMG/yuzukenyeni2.jpeg" },  {
                         "id": 13,
                         "marka": "PLATAPRO",
                         "model": "Model2",
@@ -180,7 +180,7 @@ let cartItems = [
                             "tasarim_detayi": "Kalp şeklinde tasarım",
                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                         },
-                        "img_url": "IMG/bileziy.jpg" }, 
+                        "img_url": "IMG/yuzukenyeni1.jpeg" }, 
                        ];
                        const baseDeDatos = cartItems;
             let cartPulseras = [
@@ -327,7 +327,7 @@ let cartItems = [
                             "tasarim_detayi": "Kalp şeklinde tasarım",
                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                         },
-                        "img_url": "IMG/bilezikd.jpeg" },  {
+                        "img_url": "IMG/bilezikenyeni1.jpeg" },  {
                             "id": "2",
                             "marka": "PLATAPRO",
                             "model": "Model2",
@@ -339,7 +339,7 @@ let cartItems = [
                                 "tasarim_detayi": "Kalp şeklinde tasarım",
                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                             },
-                            "img_url": "IMG/bileziy.jpg" },  {
+                            "img_url": "IMG/bilezikenyeni5.jpeg" },  {
                                 "id": "2",
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
@@ -351,7 +351,7 @@ let cartItems = [
                                     "tasarim_detayi": "Kalp şeklinde tasarım",
                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                 },
-                                "img_url": "IMG/bileziy.jpg" },  {
+                                "img_url": "IMG/bilezikenyeni2.jpeg" },  {
                                     "id": "2",
                                     "marka": "PLATAPRO",
                                     "model": "Model2",
@@ -363,7 +363,7 @@ let cartItems = [
                                         "tasarim_detayi": "Kalp şeklinde tasarım",
                                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                     },
-                                    "img_url": "IMG/bileziy.jpg" }, 
+                                    "img_url": "IMG/bilezikenyeni6.jpeg" }, 
                                    
                                ];
 
@@ -421,7 +421,7 @@ let cartItems = [
                                     "tasarim_detayi": "Kalp şeklinde tasarım",
                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                 },
-                                "img_url": "IMG/kupe11.jpeg"
+                                "img_url": "IMG/kupeenyeni3.jpeg"
                             }, {
                                 "id": "2",
                                 "marka": "PLATAPRO",
@@ -699,7 +699,7 @@ let cartItems = [
                                                     "tasarim_detayi": "Kalp şeklinde tasarım",
                                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                 },
-                                                "img_url": "IMG/kolye19.jpeg" },  {
+                                                "img_url": "IMG/kolyekanat.jpeg" },  {
                                                     "id": 12,
                                                     "marka": "PLATAPRO",
                                                     "model": "Model2",
@@ -723,7 +723,7 @@ let cartItems = [
                                                             "tasarim_detayi": "Kalp şeklinde tasarım",
                                                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                         },
-                                                        "img_url": "IMG/kolyed.jpeg" },  {
+                                                        "img_url": "IMG/kolyeenyeni.jpeg" },  {
                                                             "id": 14,
                                                             "marka": "PLATAPRO",
                                                             "model": "Model2",
