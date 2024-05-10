@@ -384,7 +384,7 @@ let cartItems = [
                                 "img_url": "IMG/kupe5.jpeg",
                             },
                             {
-                                "id": "2",
+                                "id": 2,
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
@@ -397,7 +397,7 @@ let cartItems = [
                                 },
                                 "img_url": "IMG/kupe10.jpeg"
                             },{
-                                "id": "2",
+                                "id": 3,
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
@@ -410,7 +410,7 @@ let cartItems = [
                                 },
                                 "img_url": "IMG/kupe11.jpeg"
                             },{
-                                "id": "2",
+                                "id": 4,
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
@@ -423,7 +423,7 @@ let cartItems = [
                                 },
                                 "img_url": "IMG/kupeenyeni3.jpeg"
                             }, {
-                                "id": "2",
+                                "id": 5,
                                 "marka": "PLATAPRO",
                                 "model": "Model2",
                                 "renk": "Gumus",
@@ -437,7 +437,7 @@ let cartItems = [
                                 "img_url": "IMG/kupe12.jpeg"
                             }, 
                             {
-                                    "id": "2",
+                                    "id": 6,
                                     "marka": "PLATAPRO",
                                     "model": "Model2",
                                     "renk": "Gumus",
@@ -450,7 +450,7 @@ let cartItems = [
                                     },
                                     "img_url": "IMG/kupe13.jpeg" }, 
                                      {
-                                        "id": "2",
+                                        "id": 7,
                                         "marka": "PLATAPRO",
                                         "model": "Model2",
                                         "renk": "Gumus",
@@ -463,7 +463,7 @@ let cartItems = [
                                         },
                                         "img_url": "IMG/kupe14.jpeg" },  
                                         {
-                                            "id": "2",
+                                            "id": 8,
                                             "marka": "YAGIZ BARAN",
                                             "model": "Model2",
                                             "renk": "Gumus",
@@ -476,7 +476,7 @@ let cartItems = [
                                             },
                                             "img_url": "IMG/kupe15.jpeg" },  
                                             {
-                                                "id": "2",
+                                                "id": 9,
                                                 "marka": "PLATAPRO",
                                                 "model": "Model2",
                                                 "renk": "Gumus",
@@ -488,7 +488,7 @@ let cartItems = [
                                                     "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                                 },
                                                 "img_url": "IMG/kupe17.jpeg" },  {
-                                                    "id": "2",
+                                                    "id": 10,
                                                     "marka": "PLATAPRO",
                                                     "model": "Model2",
                                                     "renk": "Gumus",
@@ -501,7 +501,7 @@ let cartItems = [
                                                     },
                                                     "img_url": "IMG/kupea.jpeg" }, 
                                                      {
-                                    "id": "2",
+                                    "id": 11,
                                     "marka": "PLATAPRO",
                                     "model": "Model2",
                                     "renk": "Gumus",
@@ -513,7 +513,7 @@ let cartItems = [
                                         "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                     },
                                     "img_url": "IMG/kupeb.jpeg" },  {
-                                        "id": "2",
+                                        "id": 12,
                                         "marka": "PLATAPRO",
                                         "model": "Model2",
                                         "renk": "Gumus",
@@ -525,7 +525,7 @@ let cartItems = [
                                             "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                         },
                                         "img_url": "IMG/kupec.jpeg" }, {
-                                            "id": "2",
+                                            "id": 13,
                                             "marka": "PLATAPRO",
                                             "model": "Model2",
                                             "renk": "Gumus",
@@ -537,7 +537,7 @@ let cartItems = [
                                                 "tasima_ozelligi": "Özel kolye kutusunda güvenli bir şekilde taşınabilir"
                                             },
                                             "img_url": "IMG/kuped.jpeg" },  {
-                                                "id": "2",
+                                                "id": 14,
                                                 "marka": "PLATAPRO",
                                                 "model": "Model2",
                                                 "renk": "Gumus",
