@@ -13,6 +13,7 @@
 
 
 <body>
+    
 <!-- Carrito -->
 <dialog id="carritoVentana">
     <h2>Carrito</h2>
@@ -72,16 +73,6 @@
 
     <script src="scripts.js"></script>
       
-<!--       <ul>
-      <li><a href="anillornek.html">ANILLOS</a></li>
-      <li><a href="pulserasornek.html">PULSERAS</a></li>
-      <li><a href="collaresornek.html">COLLARES</a></li>
-      <li><a href="ornekpendientes.html">PENDIENTES</a></li>
-     </ul>
-    </li>
-    </ul> </div>
-
-</div> -->
 </div>
 </div>
 </div>
@@ -95,17 +86,8 @@
 <ul>
     <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
     <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
-    
-    <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></li><li></h2></span> 
-          
-        <!-- Sepet Açılır Penceresi -->
-        <div id="cart-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <div id="cart-content"></div>
-            </li>
-       
-     <li id="iniciar"><h3>INICIAR</h3></li>
+     <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></span> </li>
+    <li id="iniciar"><h3>INICIAR</h3></li>
     <li id="registrar"><h3>REGISTRAR</h3></li>
   </ul>
   </div>
@@ -259,7 +241,7 @@
 </script>
 
 
-<script src="assets/script.js"></script>
+<script src="script.js"></script>
 
 <div class="padrefooter">
     <div>
@@ -276,6 +258,9 @@
  <div style="font-size: 20px; color: white;text-align: center;margin: 40px;"><p> &copy; 2024 Platapro|All Rights Reserved</p>
      </div>
    </div>
+   <script>
+     document.getElementById('numProductos').innerHTML= carrito.length;
+   </script>
 
 </body>
 </html>

@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plata</title>
+    <title>plataPro</title>
     <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Honk&family=Sixtyfour&display=swap" rel="stylesheet">
 </head>
 <body>
+     
+<!-- Carrito -->
+<dialog id="carritoVentana">
+  <h2>Carrito</h2>
+  <!-- Elementos del carrito -->
+  <ul id="carrito" class="list-group"></ul>
+  <hr>
+  <!-- Precio total -->
+  <p class="text-right">Total: <span id="total"></span>&euro;</p>
+  <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+  <button id="boton-cerrar" class="btn btn-danger">Cerrar X</button>
+</dialog>
+
+<!-- JavaScript -->
+<script>
+  const carritoVentana = document.getElementById('carritoVentana');
+  const botonCerrar = document.getElementById('boton-cerrar');
+  
+
+  window.addEventListener('click', (event) => {
+      if (event.target === carritoVentana || event.target === botonCerrar) {
+          carritoVentana.close();
+      }
+  });
+</script>
+
+
+<header id="header">
+</header>
+
+
+<script src="productos.js"></script>
+
+<script src="carrito.js"></script>
+
    <div class="navbar">
     <div class="divchild">
     <img src="IMG/tulips.png" width="50px" height="50px" >
@@ -55,43 +91,46 @@
 </div>
 
 
+
 <div class="div2">
-<ul>
-    <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
-    <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
-    <li><img src="IMG/shopping-cart.png" width="40px"></li>
-    <li id="iniciar"><h3>INICIAR</h3></li>
-    <li id="registrar"><h3>REGISTRAR</h3></li>
-  </ul>
+  <ul>
+      <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
+      <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
+      
+      
+      <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></span> </li>
+      <li id="iniciar"><h3>INICIAR</h3></li>
+      <li id="registrar"><h3>REGISTRAR</h3></li>
+    </ul>
+    </div>
+     </div>
+   
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h4>Registro</h4>
+          <form id="registerForm">
+              <input type="text" class="form-input" placeholder="Nombre de usuario" required>
+              <input type="email" class="form-input" placeholder="Correo electrónico" required>
+              <input type="password" class="form-input" placeholder="Contraseña" required>
+              <button type="submit">Registrarse</button>
+          </form>
+          
+        </div>
   </div>
-   </div>
- 
-  <div id="registerModal" class="modal">
+  <div id="loginModal" class="modal">
     <div class="modal-content">
-        <span class="close-btn" id="closeModal">&times;</span>
-        <h4>Registro</h4>
-        <form id="registerForm">
-            <input type="text" class="form-input" placeholder="Nombre de usuario" required>
+        <span class="close-btn" id="closeLoginModal">&times;</span>
+        <h4>Iniciar Sesión</h4>
+        <form id="loginForm">
             <input type="email" class="form-input" placeholder="Correo electrónico" required>
             <input type="password" class="form-input" placeholder="Contraseña" required>
-            <button type="submit">Registrarse</button>
+            <button type="submit">Iniciar Sesión</button>
         </form>
-        
-      </div>
-</div>
-<div id="loginModal" class="modal">
-  <div class="modal-content">
-      <span class="close-btn" id="closeLoginModal">&times;</span>
-      <h4>Iniciar Sesión</h4>
-      <form id="loginForm">
-          <input type="email" class="form-input" placeholder="Correo electrónico" required>
-          <input type="password" class="form-input" placeholder="Contraseña" required>
-          <button type="submit">Iniciar Sesión</button>
-      </form>
+    </div>
   </div>
-</div>
-</div>
-</div>  
+  </div>
+  </div>  
 
 
 <script>
@@ -228,8 +267,9 @@
 
 
 
-
-
+<script>
+  document.getElementById('numProductos').innerHTML= carrito.length;
+</script>
 
 
 

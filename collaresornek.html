@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html>
 <head>
@@ -98,16 +99,9 @@
     <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
     <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
     
-    <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></li><li></h2></span> 
-          
-        <!-- Sepet Açılır Penceresi -->
-        <div id="cart-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <div id="cart-content"></div>
-            </li>
-       
-     <li id="iniciar"><h3>INICIAR</h3></li>
+    
+    <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></span> </li>
+    <li id="iniciar"><h3>INICIAR</h3></li>
     <li id="registrar"><h3>REGISTRAR</h3></li>
   </ul>
   </div>
@@ -220,7 +214,7 @@
 </section>
 
 <dialog id="modalArticulo">
-   <h2 id="modalH2">Anillos</h2>
+   <h2 id="modalH2">Collares</h2>
    <p>descripcion</p>
    <div id="imagenMarco">
         <img id="articuloImagen" src="modal/img/imagen1.jpg" >
@@ -278,6 +272,8 @@
  <div style="font-size: 20px; color: white;text-align: center;margin: 40px;"><p> &copy; 2024 Platapro|All Rights Reserved</p>
      </div>
    </div>
-
+   <script>
+    document.getElementById('numProductos').innerHTML= carrito.length;
+  </script>
 </body>
 </html>
