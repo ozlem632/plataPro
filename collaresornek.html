@@ -1,10 +1,9 @@
-
-
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>ANILLOS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COLLARES</title>
 <link rel="stylesheet" href="css.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +62,7 @@
      <!--  <ul> -->
         <!-- <li> --> <!-- <div> <h2>CATALOG</h2></div>  -->
              <div class="menu">
-              <div class="menu-trigger" id="hamburger"><h4>CATAGORIAS</h></div>
+              <div class="menu-trigger" id="hamburger"><h4>CATEGORÍAS</h4></div>
       
         <div class="submenu" id="submenu">
             <a href="anillornek.html" target="_blank">ANILLOS</a>
@@ -88,10 +87,11 @@
 </div>
 </div>
 </div>
+
 <div class="search">
-  <img src="IMG/search.png" width="65px" height="75px">
-  <input type="text" style="border-radius: 12px; padding: 20px 170px;margin: 15px;margin-left: 0;" placeholder="Busca.....">
-</div>
+    <img src="IMG/search.png"  width="65px" height="75px"id="imgsearc"  onclick="arama();" >
+    <input id="palabras" type="text" style="border-radius: 12px; padding: 20px 170px;margin: 15px;margin-left: 0;" placeholder="Busca....."   >
+  </div>
 
 
 <div class="div2">
@@ -259,7 +259,8 @@
 
 <div class="padrefooter">
     <div>
-     <h5>CONTACTO</h5>
+    
+        <a href="https://form.jotform.com/241333033984353"  target="_blank"><h5>CONTACTO</h5></a>
      </div>
  
      <div class="footer">
@@ -272,8 +273,7 @@
  <div style="font-size: 20px; color: white;text-align: center;margin: 40px;"><p> &copy; 2024 Platapro|All Rights Reserved</p>
      </div>
    </div>
-   <script>
-    document.getElementById('numProductos').innerHTML= carrito.length;
-  </script>
+ 
+ 
 </body>
 </html>

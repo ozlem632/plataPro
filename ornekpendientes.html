@@ -1,9 +1,8 @@
-
-
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PENDIENTES</title>
 <link rel="stylesheet" href="css.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +13,9 @@
 
 
 <body>
-    
-<!-- Carrito -->
+  
+
+    <!-- Carrito -->
 <dialog id="carritoVentana">
     <h2>Carrito</h2>
     <!-- Elementos del carrito -->
@@ -62,7 +62,7 @@
      <!--  <ul> -->
         <!-- <li> --> <!-- <div> <h2>CATALOG</h2></div>  -->
              <div class="menu">
-              <div class="menu-trigger" id="hamburger"><h4>CATAGORIAS</h></div>
+              <div class="menu-trigger" id="hamburger"><h4>CATEGORÍAS</h4></div>
       
         <div class="submenu" id="submenu">
             <a href="anillornek.html" target="_blank">ANILLOS</a>
@@ -74,20 +74,33 @@
 
     <script src="scripts.js"></script>
       
+<!--       <ul>
+      <li><a href="anillornek.html">ANILLOS</a></li>
+      <li><a href="pulserasornek.html">PULSERAS</a></li>
+      <li><a href="collaresornek.html">COLLARES</a></li>
+      <li><a href="ornekpendientes.html">PENDIENTES</a></li>
+     </ul>
+    </li>
+    </ul> </div>
+
+</div> -->
 </div>
 </div>
 </div>
+
 <div class="search">
-  <img src="IMG/search.png" width="65px" height="75px">
-  <input type="text" style="border-radius: 12px; padding: 20px 170px;margin: 15px;margin-left: 0;" placeholder="Busca.....">
-</div>
+    <img src="IMG/search.png"  width="65px" height="75px"id="imgsearc"  onclick="arama();" >
+    <input id="palabras" type="text" style="border-radius: 12px; padding: 20px 170px;margin: 15px;margin-left: 0;" placeholder="Busca....."   >
+  </div>
 
 
 <div class="div2">
 <ul>
     <li><img src="IMG/ispanya bayragi.webp" class="bayrak" alt= "resim1"></li>
     <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
-     <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></span> </li>
+    
+    
+    <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></span> </li>
     <li id="iniciar"><h3>INICIAR</h3></li>
     <li id="registrar"><h3>REGISTRAR</h3></li>
   </ul>
@@ -246,7 +259,8 @@
 
 <div class="padrefooter">
     <div>
-     <h5>CONTACTO</h5>
+    
+        <a href="https://form.jotform.com/241333033984353"  target="_blank"><h5>CONTACTO</h5></a>
      </div>
  
      <div class="footer">
@@ -259,9 +273,8 @@
  <div style="font-size: 20px; color: white;text-align: center;margin: 40px;"><p> &copy; 2024 Platapro|All Rights Reserved</p>
      </div>
    </div>
-   <script>
-     document.getElementById('numProductos').innerHTML= carrito.length;
-   </script>
+   
+   
 
 </body>
 </html>

@@ -191,3 +191,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
+document.getElementById("palabras").addEventListener("keypress", function(event) {
+     // Enter tuşu basıldığında (keyCode 13)
+     if (event.keyCode === 13) {
+         arama(); // Arama işlevini çağır
+     }
+ });
+
+
+
+function arama() {
+ let buscar = document.getElementById('palabras').value.toLowerCase();
+ let found = false; // Eşleşme bulunduğunda true olacak bir değişken tanımlayalım
+ 
+ switch (true) {
+     case buscar.startsWith("ani"):
+         window.location.href = "anillornek.html"; // Yüzükler sayfasına yönlendirme
+         found = true;
+         break;
+     case buscar.startsWith("pul"):
+         window.location.href = "pulserasornek.html"; // Bilezikler sayfasına yönlendirme
+         found = true;
+         break;
+     case buscar.startsWith("col"):
+         window.location.href = "collaresornek.html"; // Kolyeler sayfasına yönlendirme
+         found = true;
+         break;
+     case buscar.startsWith("pen"):
+         window.location.href = "ornekpendientes.html"; // Küpeler sayfasına yönlendirme
+         found = true;
+         break;
+ }
+ 
+ if (!found) {
+     alert("Aranan ürün bulunamadı!"); // Eşleşme bulunamazsa uyarı göster
+ }
+}
+document.getElementById('numProductos').innerHTML= carrito.length;

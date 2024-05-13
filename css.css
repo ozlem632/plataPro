@@ -63,14 +63,17 @@
 	position: absolute;
 	text-align: center;
 	color: red;
+	
+	
   }
 	/* .c{display: flex;justify-content: space-between;margin-left: 15px;cursor: pointer;font-weight: bold;} */
 /* .c:hover{padding: 20px;background-color: rgb(248, 35, 134);} */
 tr td img{width: 50%;}
 .navbar{display: flex; justify-content: space-between; background-color: #140909;}
-      ul {
+     
+
+ul {
 		display: flex;
-		
 		list-style: none;
 		padding: 0;cursor: pointer;font-weight: bold;
 
@@ -80,11 +83,9 @@ tr td img{width: 50%;}
 		display: block;
 		justify-content: center;
 		position: relative;
-		margin-left: 5px;
-		
-	}
-	li{list-style-image: url(img/16373595908);}
-	 
+		}
+
+	 li{margin-left: 15px;}
 	ul li a {
 		display: block;
 		padding: 10px 30px;
@@ -280,7 +281,7 @@ position: fixed;
   margin-top: 100px;
 	}
 .search{display: flex;}
-.search img{margin-top: 8px;width: 65; height: 65px;}
+.search img{margin-top: 10px;width: 65px; height: 65px;}
   .display{display: flex;justify-content: space-between;}
 @media screen and (max-width: 600px) {
 	.responsive-table th, 
@@ -289,7 +290,7 @@ position: fixed;
 		width: 100%;
 	}
 }
-
+.search input{width: 80%;}
 
 /* registrar */
 
@@ -503,16 +504,17 @@ h1,h2,h3 {
 .padrefooter { background-color: black;width: 100%;height: 500px;}
 .footer{display: flex;flex-direction:column;justify-content: center;  cursor: pointer;font-weight: bold;text-align: center;margin-top: 300px;}
 
-.imagenpagina h3{font-size: 40px;position: relative; margin-top: 200px;margin-left: 115px;margin-bottom: 15px;}
-.imagenpagina{display: flex;justify-content:center ; flex-wrap: wrap;;}
-.imagenpagina img{border-radius: 50%;border:solid 5px #007BFF;width: 300px;height: 300px;flex-wrap: wrap;margin-left: 100px;margin-bottom: 20px;}
+
 	#fotoTitulo{
     text-align: center;
-    font-size: 20px;
+    font-size: 20px
 }
 button{width: 150px}
 
-@media(min-width:1200px){
+
+
+
+@media(max-width:2000px){
 
 	.col-lg-12{width:100%;}
 	.col-lg-11{width:91.66666667%;}
@@ -528,11 +530,11 @@ button{width: 150px}
 	.col-lg-1{width: 8.33333333%;}
 	.col-lg-0{display:none;}
 	
+.imagenpagina h3{font-size: 40px;position: relative; margin-top: 200px;  margin-bottom: 15px;}
+.imagenpagina{display: flex;justify-content:center ;flex-wrap: wrap;}
+.imagenpagina img{border-radius: 50%;border:solid 5px #007BFF;width: 300px; height: 300px;margin-bottom: 20px;}
+	}
 	
-	
-
-	
-}
 
 /*=============================================PANTALLA DE
 ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal
@@ -582,7 +584,7 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical
 	.divchild{width: 33.33;}
 	input{width: 40%}
 		  .catagoria{width: 10%;}
-		  
+		
 		  
 	
 }
@@ -604,7 +606,7 @@ EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical
 	.col-xs-1{width: 8.33333333%;}
 	.col-xs-0{display:none;}
 	
-	
+
 		  
         
 		
@@ -628,7 +630,7 @@ EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical
 
 	.bien{font-weight: bold;color: #09ff00;}
 	.navbar{display: block; justify-content: center;height: 300px;}
-input{ width: 100%;}
+input{ width: 80%;}
 ul li{display: flex;justify-content: space-between;margin-left: 25px;}
 .imagenpagina h3{font-size: 25px;}
 .divchild{margin: 0 auto;}
@@ -643,6 +645,16 @@ ul li{display: flex;justify-content: space-between;margin-left: 25px;}
   /* Fare öğenin üzerine geldiğinde */
   li:hover {
 	background-color: #799bb3; /* Örnek: Biraz daha koyu bir renk */
- height: 40px;
+ height: 40px;}
+
+   
+ 
+	
+	
+  
+  #iconoCarrito {
+	position:relative;
+	margin-top: 3px;
+	}
 
 }
