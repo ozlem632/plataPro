@@ -6,19 +6,28 @@
 	text-decoration: none;
 	font-family: sans-serif;
 	box-sizing: border-box; }
-	h2{font-size: 15px; color:rgb(68, 0, 255);margin-top: 15px;}
+	h2{font-size: 20px; color:rgb(68, 0, 255);margin-top: 15px;}
 	.div1{display:flex;justify-content: space-between;} 		
-    .div2{display: flex;justify-content: space-between;margin-top: 30px;margin-right: 15px;}
+    .div2{display: flex;justify-content: space-between;margin-top: 30px;margin-right: 20px;}
 /* anillo.html */
-     dialog{width:30%;height:50%;border-radius: 20px;border: solid 3px red;margin: 0 auto;margin-top: 300px;}
-    dialog button{justify-content: center;margin-top: 60px;}
+     dialog{width:50%;height:60%;border-radius: 20px ;border: solid 5px red;margin: 0 auto;margin-top: 300px;}
+    dialog button{justify-content: center;margin-top: 200px;}
     #articulos {
          display: flex;
          flex-wrap: wrap;
          gap: 20px;
          width: auto;
-         
-     }
+        }
+		/* urun anadir carrito diologu */
+		
+	
+		
+		.toplam{background-color:red ;color: white;font-size: 15px;padding: 0 30px; margin-left: auto;margin-right: 5px;}
+		.toplam p{margin-top: 20px;}
+		.cer{display: flex;justify-content: center;}
+		.cer button{margin-left: 3px;background-color: #00a2ff;}
+	 #carritoVentana ul{display: flex; flex-direction: column;}
+	 #carritoVentana ul li {display: flex;justify-content: space-evenly;}
     #articulos img{border: solid 1px white;
  display: flex;justify-content: center;width: 200px;}
     
@@ -53,9 +62,7 @@
 	position:relative;
 	width: 40px;
 	height: 40px;
-
-	  
-	  bottom: 0px;
+ bottom: 0px;
 	}
 	
   
@@ -68,8 +75,9 @@
   }
 	/* .c{display: flex;justify-content: space-between;margin-left: 15px;cursor: pointer;font-weight: bold;} */
 /* .c:hover{padding: 20px;background-color: rgb(248, 35, 134);} */
-tr td img{width: 50%;}
+
 .navbar{display: flex; justify-content: space-between; background-color: #140909;}
+.navbar img{width: 40px; height: 40px;}
      
 
 ul {
@@ -83,18 +91,13 @@ ul {
 		display: block;
 		justify-content: center;
 		position: relative;
+		margin-bottom: 35px;
 		}
 
 	 li{margin-left: 15px;}
-	ul li a {
-		display: block;
-		padding: 10px 30px;
-		text-decoration: none;
-		
-		
-		
-	}
-	.catagoria{display: flex;margin-top: 15px ;}
+	
+	
+		.catagoria{display: flex;margin-top: 30px ;}
 	.catagoria img{width: 50px; height: 50px;}
 	.catagoria h4{ margin-top: 15px; color: #1fdf2f; font-size: 20px;}
 	
@@ -111,7 +114,7 @@ ul {
 	}
 	.whatsup{display: block; position: fixed;}
 	
-	H3{font-size: 15px;color: rgb(17, 228, 27); font-family: Arial, Helvetica, sans-serif;font-style: italic;margin-top: 10px;}
+	H3{font-size: 16px;color: rgb(17, 228, 27); font-family: Arial, Helvetica, sans-serif;font-style: italic;margin-top: 10px;}
 	 ul li:hover ul {
 		display: block;
 		background-color:rgb(226, 216, 216);
@@ -203,50 +206,39 @@ button[data-action="buy"] {
 	text-align: center;               /* Beyaz yazı rengi */
 }
 
-h5{font-size: 40px;color: blue;}
+h5{font-size: 30px;color: blue;cursor: pointer;text-align: center;}
 
 h1 {
     font-family: "Whisper", cursive;
     font-weight: 400;
     font-style: normal;
 	color: rgb(58, 245, 34);
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
 	font-weight: bolder;
 	
   }
   .div3{display: flex;; background-color: black;width: 100%;}
-  .divchild{display: flex;}
-img{background-size: contain;}
+  .divchild{display: flex; margin-top: 30px;}
+   img{background-size: contain;}
  /* pendientes */
  
  .display{display: flex;justify-content: space-between;gap: 4px; width:100%;}
 .border{border: solid 2px black;margin-left: 3px;}
 #devam{display: none;}
- dialog button{width: 100px; height: 50px; background-color: rgb(255, 0, 255);font-size: 20px;color: white; text-align: center;}
+ dialog button{ margin-top: 20px;  width: 100px; height: 50px; background-color: rgb(0, 255, 13);font-size: 20px;color: rgb(26, 4, 4); text-align: center;margin-left: auto; margin-right: 0;}
+
 
 
 body {
 	font-family: Ariafl, sans-serif;
 }
 
-.responsive-table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-top: 100px;
-}
 
-.responsive-table th, 
-.responsive-table td {
-	border: 1px solid #ddd;
-	padding: 8px;
-	text-align: center;
-}
 
-.responsive-table img {
-	max-width: 100%;
-	height: auto;
-}
+
+
+
 /* Index html nin css kodlari */
  /* Resmin üstüne gelecek transparan katmanın stilini belirleyelim */
  .overlay {
@@ -273,6 +265,7 @@ position: fixed;
     display: fixed;
   }
 
+
   /* Resim container'ının pozisyonunu belirleyelim */
   .container {
     position: relative;
@@ -281,16 +274,17 @@ position: fixed;
   margin-top: 100px;
 	}
 .search{display: flex;}
-.search img{margin-top: 10px;width: 65px; height: 65px;}
+.search img{margin-top: 30px;width: 50px; height: 50px;}
   .display{display: flex;justify-content: space-between;}
-@media screen and (max-width: 600px) {
-	.responsive-table th, 
-	.responsive-table td {
-		display: block;
-		width: 100%;
-	}
-}
-.search input{width: 80%;}
+  .intro{border-radius: 20px; width: 300px;height: 50px;margin-top: 30px;padding: 20px;font-size: 30px;}
+  #palabras::placeholder {
+	color:black; /* Yer tutucu metnin rengi */
+	font-style: italic; /* Yer tutucu metnin stili (italik gibi) */
+	opacity: 0.5;
+	
+	font-size: 20px; /* Yer tutucu metnin opaklığı */
+	/* Diğer stil özellikleri buraya eklenebilir */
+  }
 
 /* registrar */
 
@@ -386,10 +380,7 @@ ul{display: flex;}
 .submenu a:hover {
     background-color: #acd612;
 }
-@media screen (max-width: 576px){
-	
-html{font-size: 50%;}
-}
+
 
 
 
@@ -405,6 +396,29 @@ html{font-size: 50%;}
 h1,h2,h3 {
     text-align: center;
 }
+/* contactonun codlari */
+#contactFormModal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Arkaplanı karartmak için yarı saydam bir siyah renk */
+	z-index: 9999; /* Diğer elementlerin üstünde olması için yüksek bir z-index değeri */
+	display: none; /* Başlangıçta gizli tutuyoruz */
+}
+
+#modalContent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+/* anillos */
+
 #container {
 	background-color:antiquewhite;
 	padding: 5px;
@@ -470,30 +484,15 @@ h1,h2,h3 {
 
 
 /* index sayfasinin resmi */
-.image2 {
-    position:relative;
-    background: url('IMG/fonrenkli.jpeg') no-repeat fixed;
-    background-position: center center;
-    background-size: cover;
-	
-}
+
 
 .content { /* section */
     width: 100%;
 	background-color:rgba(255,255,255,1.00);}
-.bien{
-   position: absolute;
-   color:rgb(13, 4, 22);
-    font-size: 55px;
-    text-align:center;
-    margin: 0 auto;
-    width: 600px;
-    position: absolute; /* hijo */
-    top: 20px;
-    left: 50%;
-    margin-left: -300px;
-    opacity:0.8;
-  }
+
+
+
+	
   
 /* h4{font-family: 'Honk', system-ui;
 	font-size: 40px;
@@ -530,7 +529,7 @@ button{width: 150px}
 	.col-lg-1{width: 8.33333333%;}
 	.col-lg-0{display:none;}
 	
-.imagenpagina h3{font-size: 40px;position: relative; margin-top: 200px;  margin-bottom: 15px;}
+.imagenpagina h3{font-size: 30px;position: relative;   margin-bottom: 15px;}
 .imagenpagina{display: flex;justify-content:center ;flex-wrap: wrap;}
 .imagenpagina img{border-radius: 50%;border:solid 5px #007BFF;width: 300px; height: 300px;margin-bottom: 20px;}
 	}
@@ -557,7 +556,7 @@ ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal
 	.col-md-0{display:none;}
 	
 
-	 input{width: 50%}
+	
 	 
 
 
@@ -566,7 +565,7 @@ ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal
 /*=============================================
 PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical
 768px=============================================*/
-@media(max-width:991px) and (min-width:768px){
+@media(max-width:991px){
 	.col-sm-12{width:100%;}
 	.cod-sm-11{width:91.66666667%;}
 	.col-sm-10{width:83.33333333%;}
@@ -581,9 +580,9 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical
 	.col-sm-1{width: 8.33333333%;}
 	.col-sm-0{display:none;}
 	.display{display: inline-flex;}
-	.divchild{width: 33.33;}
-	input{width: 40%}
-		  .catagoria{width: 10%;}
+	
+	
+		  
 		
 		  
 	
@@ -606,55 +605,72 @@ EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical
 	.col-xs-1{width: 8.33333333%;}
 	.col-xs-0{display:none;}
 	
-
-		  
-        
-		
-		.menu {margin: 0 auto;
-			display: inline-block;
-		}
-		
-		.bien{
-			color:rgb(59, 10, 240);
-			font-size: 30px;
-			text-align:center;
-			margin: 0 auto;
-			width: 600px;
-			position: absolute; /* hijo */
-			margin: 0;
-			left: 50%;
-			margin-left: -300px;
-			opacity:0.8;
-		}
-	
-
-	.bien{font-weight: bold;color: #09ff00;}
-	.navbar{display: block; justify-content: center;height: 300px;}
-input{ width: 80%;}
-ul li{display: flex;justify-content: space-between;margin-left: 25px;}
-.imagenpagina h3{font-size: 25px;}
-.divchild{margin: 0 auto;}
-.padrecatagoria ,.search,.divchild, .div2{justify-content: center;}
-#articulos{justify-content: center;}
-#imagenMarco img{justify-content: center;}
-#imagenMarco{width: 100%;}
-.dialog{width: 50%;margin-top:0;height: auto;}
-}
-  
-  
-  /* Fare öğenin üzerine geldiğinde */
-  li:hover {
-	background-color: #799bb3; /* Örnek: Biraz daha koyu bir renk */
- height: 40px;}
-
-   
- 
-	
-	
-  
-  #iconoCarrito {
-	position:relative;
-	margin-top: 3px;
 	}
+	@media only screen and (max-width: 600px) {
+		.navbar {
+		  flex-direction: column;
+		  align-items: center;
+		}
+	  
+		.navbar .divchild {
+		  margin-bottom: 20px;
+		}
+	  
+		.navbar .search {
+		  margin-bottom: 20px;
+		}
+	  
+		.navbar .div2 {
+		  display: flex;
+		  justify-content: space-evenly;
+		  align-items: center;
+		  width: 100%;
+		  
+		}
+	  
+		.navbar .div2 ul {
+		  display: flex;justify-content: center;
+		  list-style: none;
+		  padding: 0;
+		  margin: 0;
 
-}
+		}
+		.list-group{display: flex;flex-direction: column;}
+		#carritoventana{display: flex; flex-direction: column;background-color: #319624;}
+		
+		
+		.navbar .div2 ul li  {
+		  margin: 0 5px;
+		  padding: 5p;
+		  
+		  
+		}
+	  .bien{font-size: 30px;color: #5207a8;}
+	  .intro{font-size: 18px;color: #f702a5;}
+	  h5{text-align: center;}
+	  .padrefooter{display: flex;flex-direction: column;justify-content: space-evenly;}
+	#articulos{display: flex;justify-content: center;}
+	dialog{width:100%;  height: 80%; margin-top: 20px; }
+	dialog button{width: 50px;}
+	h5{justify-content: center;}
+	#iconoCarrito {
+		position:relative;
+		width: 40px;
+		height: 40px;
+	 bottom: 0px;
+		}
+		
+	  
+	  #numProductos {
+		position: absolute;
+		text-align: center;
+		color: red;
+		
+		
+	  }
+	
+	  .menu { 
+		display: inline-block;
+	}
+	
+	}

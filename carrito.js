@@ -83,14 +83,24 @@ let carrito = [];
                     const miNodo = document.createElement('li');
                     miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
                     miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].model} - ${miItem[0].precio}${divisa}`;
+                    //img
+                    let miImg = document.createElement('img');
+                    miImg.src = miItem[0].img_url;
+                    miImg.classList.add('img-thumbnail');
+                    miImg.style.width='100px';
+                    
+                    
                     // Boton de borrar
-                    const miBoton = document.createElement('button');
+                 const miBoton = document.createElement('button');
                     miBoton.classList.add('btn', 'btn-danger', 'mx-5');
                     miBoton.textContent = 'X';
-                    miBoton.style.marginLeft = '1rem';
+                    miBoton.style.marginLeft = '2rem';
                     miBoton.dataset.item = item;
                     miBoton.setAttribute("onClick",`borrarItemCarrito(${miItem[0].id})`); 
+                    miBoton.classList.add('hiza');
+                   
                     // Mezclamos nodos
+                    miNodo.appendChild(miImg);
                     miNodo.appendChild(miBoton);
                     DOMcarrito.appendChild(miNodo);
                 });

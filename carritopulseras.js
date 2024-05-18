@@ -1,10 +1,12 @@
 
+
 let carrito = [];
             const divisa = '€';
             //const DOMitems = document.querySelector('#items');
             const DOMcarrito = document.querySelector('#carrito');
             const DOMtotal = document.querySelector('#total');
             const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+           
             const miLocalStorage = window.localStorage;
 
             // Funciones
@@ -13,7 +15,7 @@ let carrito = [];
             * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
             */
             function renderizarProductos() {
-                baseDePulseras.forEach((info) => {
+                baseDeDatos.forEach((info) => {
                     // Estructura
                     const miNodo = document.createElement('div');
                     miNodo.classList.add('card', 'col-sm-4');
@@ -58,6 +60,7 @@ let carrito = [];
                 renderizarCarrito();
                 // Actualizamos el LocalStorage
                 guardarCarritoEnLocalStorage();
+
             }
 
             /**
@@ -83,17 +86,26 @@ let carrito = [];
                     // Creamos el nodo del item del carrito
                     const miNodo = document.createElement('li');
                     miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
+                    
                     miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].model} - ${miItem[0].precio}${divisa}`;
                     // Boton de borrar
+                    let miImg = document.createElement('img');
+                    miImg.src = miItem[0].img_url;
+                    miImg.classList.add('img-thumbnail');
+                    miImg.style.width='100px';
+                    
                     const miBoton = document.createElement('button');
-                    miBoton.classList.add('btn', 'btn-danger', 'mx-5');
-                    miBoton.textContent = 'X';
-                    miBoton.style.marginLeft = '1rem';
+                     miBoton.textContent = 'X';
+                    miBoton.style.marginLeft = '2Rem';
+                    miBoton.style.marginTop = '0';
                     miBoton.dataset.item = item;
                     miBoton.setAttribute("onClick",`borrarItemCarrito(${miItem[0].id})`); 
+                    miBoton.classList.add('hiza');
                     // Mezclamos nodos
-                    miNodo.appendChild(miBoton);
+                   miNodo.appendChild(miImg);
+                 miNodo.appendChild(miBoton);
                     DOMcarrito.appendChild(miNodo);
+
                 });
                 // Renderizamos el precio total en el HTML
                 DOMtotal.textContent = calcularTotal();
@@ -103,6 +115,8 @@ let carrito = [];
             /**
             * Evento para borrar un elemento del carrito
             */
+           
+           
             function borrarItemCarrito(id) {
                 // Obtenemos el producto ID que hay en el boton pulsado
                 //const id = evento.target.dataset.item;
@@ -124,7 +138,7 @@ let carrito = [];
                 // Recorremos el array del carrito
                 return carrito.reduce((total, item) => {
                     // De cada elemento obtenemos su precio
-                    const miItem = baseDePulseras.filter((itemBaseDatos) => {
+                    const miItem = baseDeDatos.filter((itemBaseDatos) => {
                         return itemBaseDatos.id === parseInt(item);
                     });
                     // Los sumamos al total
@@ -169,3 +183,4 @@ let carrito = [];
             cargarCarritoDeLocalStorage();
             renderizarCarrito()
 
+            
