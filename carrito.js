@@ -57,6 +57,7 @@ let carrito = [];
                 renderizarCarrito();
                 // Actualizamos el LocalStorage
                 guardarCarritoEnLocalStorage();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
 
             /**

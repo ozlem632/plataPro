@@ -11,7 +11,7 @@
     .div2{display: flex;justify-content: space-between;margin-top: 30px;margin-right: 20px;}
 /* anillo.html */
      dialog{width:50%;height:60%;border-radius: 20px ;border: solid 5px red;margin: 0 auto;margin-top: 300px;}
-    dialog button{justify-content: center;margin-top: 200px;}
+    dialog button{justify-content: center;margin-top: 200px;margin-left: 200px;}
     #articulos {
          display: flex;
          flex-wrap: wrap;
@@ -64,7 +64,7 @@
 	height: 40px;
  bottom: 0px;
 	}
-	
+	#articuloImagen{display: flex;justify-content: center;}
   
   #numProductos {
 	position: absolute;

@@ -105,7 +105,7 @@
     <li><img src="IMG/heart.png" width="40px" id="cesta"></li>
     
     
-    <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><span id="numProductos" class="cart-icon"></span> </li>
+    <li><img src="IMG/shopping-cart.png" width="40px" id="iconoCarrito"  onclick="verCarrito();"><i id="numProductos" class="cart-icon"></i> </li>
     <li id="iniciar"><h3>INICIAR</h3></li>
     <li id="registrar"><h3>REGISTRAR</h3></li>
   </ul>
@@ -219,12 +219,18 @@
 </section>
 
 <dialog id="modalArticulo" class="dialogo">
-   <h2 id="modalH2">Anillos</h2>
-   <p>descripcion</p>
+   <h2 id="modalH2">PLATAPRO</h2>
+
    <div id="imagenMarco">
         <img id="articuloImagen" src="modal/img/imagen1.jpg" >
+       
+        <div id="ozellikler">
+            </div>
     </div>
-   <button onclick="window.modalArticulo.close();">Cerrar</button> 
+ 
+  
+  
+    <button onclick="window.modalArticulo.close();">Cerrar</button> 
 </dialog>
 <script src="productos.js"></script>
 <script>
@@ -239,6 +245,8 @@
                     <img src="${items.img_url}" alt="Producto">
                 </div>
                 
+                
+                
                 <button onclick="verModal('${items.marka}','${items.img_url}')">VER DETALLE</button>
                 <button id="anadir" onclick="anyadirProductoAlCarrito(${items.id})">AÑADIR CARRITO</button>
 
@@ -246,13 +254,13 @@
     }
     document.getElementById('articulos').innerHTML = textoArticulos;
 
-    function verModal(marka, img_url) {
+    function verModal(marka, img_url,model,renk) {
         console.log(document.querySelector('#modalH2'));
         console.log(marka);
         console.log(img_url);
-        document.querySelector('#modalH2').innerHTML = marka.id;
+        document.querySelector('#modalH2').innerHTML = marka;
         document.querySelector('#articuloImagen').src = img_url;
-       
+
        
         modalArticulo.showModal();
     }
